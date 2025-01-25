@@ -54,3 +54,31 @@ footer
     background: #333;
     color: #fff;
 }
+
+#proyectos {
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+    #proyectos ul {
+        list-style-type: none;
+    }
+
+    #proyectos li {
+        margin-bottom: 20px;
+        background-color: #fff;
+        padding: 10px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    #proyectos a {
+        text-decoration: none;
+        color: #333;
+    }
+
+    #proyectos img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }

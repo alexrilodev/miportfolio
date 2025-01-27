@@ -7,11 +7,10 @@
     color: #333;
 }
 
-header 
-{
+header {
     background: #333;
     color: #fff;
-    padding: 16rem;
+    padding: 4rem 2rem;
 }
 
 .header-container {
@@ -22,8 +21,8 @@ header
 }
 
 .foto-container img {
-    width: 300px;
-    height: auto;
+    width: 100%;
+    max-width: 300px;
     border: 20px groove #1c6297;
     border-radius: 35%;
     box-shadow: 0 4px 500px #4f548d;
@@ -34,7 +33,10 @@ header
     flex: 1;
 }
 
-    .texto-container h1,
+    .texto-container h1 {
+        font-size: 5vw;
+    }
+
     .texto-container h2,
     .texto-container h3,
     .texto-container ul {
@@ -55,6 +57,29 @@ header
     .texto-container {
         text-align: center;
     }
+
+        .texto-container h1 {
+            font-size: 6vw;
+        }
+
+        .texto-container ul {
+            padding-left: 20px;
+        }
+
+    nav ul li a {
+        font-size: 18px;
+    }
+
+    section {
+        padding: 10px;
+    }
+
+    .contacto-container {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
 }
 
 nav {
@@ -65,211 +90,71 @@ nav {
     background: #f7e99d;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     padding: 10px 0;
-    transition: top 0.3s;
 }
 
 html {
     scroll-behavior: smooth;
 }
 
-    nav ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        text-align: center;
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+    nav ul li {
+        display: inline;
+        margin: 0 10px;
     }
 
-        nav ul li {
-            display: inline;
-            margin: 0 10px;
+        nav ul li a {
+            font-size: 20px;
+            font-weight: 700;
+            color: #333;
+            text-decoration: none;
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
         }
 
-            nav ul li a {
-                font-size: 20px;
-                font-weight: 700;
-                color: #333;
-                text-decoration: none;
-                padding: 8px 12px;
-                border-radius: 5px;
-                transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+            nav ul li a:hover {
+                background-color: #333;
+                color: #fff;
+                transform: translateY(-3px);
             }
 
-                nav ul li a:hover {
-                    background-color: #ffdd00;
-                    color: #000;
-                    transform: scale(1.05);
-                }
-
-
-section
-{
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 800px;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-footer
-{
-    text-align: center;
-    padding: 1rem;
+footer {
     background: #333;
     color: #fff;
-}
-
-#proyectos {
-    text-align: center;
-    background-color: #f4f4f4;
-    padding: 20px;
-}
-
-#proyectos ul {
-    list-style-type: none;
-}
-
-#proyectos li {
-    margin-bottom: 20px;
-    background-color: #fff;
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-#proyectos a {
-    text-decoration: none;
-    color: #333;
-}
-
-#proyectos img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-
-#proyectos img:hover {
-    transform: scale(1.1);
-}
-
-#stack-tecnologico {
     text-align: center;
     padding: 20px;
+    margin-top: 30px;
 }
 
 .stack-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    justify-items: center;
-    align-items: center;
-}
-
-.stack-item img {
-    width: 100px;
-    height: auto;
+    gap: 15px;
     margin: 0 auto;
-    display: block;
-    border: 2px solid #ccc;
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-    transition: transform 0.2s ease;
-}
-
-.stack-item img:hover {
-    transform: scale(1.1);
-}
-
-.stack-item h3 {
-    margin-top: 10px;
-    font-size: 1.2em;
-    color: #333;
-}
-
-#habilidades {
     text-align: center;
+}
+
+.stack-item {
     padding: 20px;
+    border: 2px solid #1c6297;
+    border-radius: 10px;
+    background: #f0f0f0;
 }
 
-.habilidades-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.habilidades {
-    background-color: #f0f0f0;
-    color: #333;
-    font-size: 1.2em;
-    font-weight: bold;
-    padding: 10px 15px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-    transition: transform 0.2s ease, background-color 0.2s ease;
-}
-
-.habilidades:hover {
-    transform: scale(1.1);
-    background-color: #ffdd00;
-    color: #000;
-}
-
-#contacto {
-        text-align: center;
-        padding: 20px;
-    }
-
-    #contacto h2 {
-        font-size: 2rem;
-        margin-bottom: 20px;
-        color: #333;
-    }
-
-    .contacto-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-    }
-
-    .contacto-item {
-        display: flex;
-        align-items: center;
-        background-color: #f9f9f9;
-        padding: 15px;
-        border-radius: 8px;
-        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-        width: 100%;
-        max-width: 400px;
-        transition: transform 0.2s ease, background-color 0.2s ease;
-    }
-
-    .contacto-item:hover {
-        transform: scale(1.05);
-        background-color: #ffdd00;
-    }
-
-    .contacto-item img {
-        width: 40px;
+    .stack-item img {
+        width: 80%;
         height: auto;
-        margin-right: 15px;
+        margin-bottom: 10px;
     }
 
-    .contacto-item p {
-        margin: 0;
-        font-size: 1rem;
-        color: #333;
-        font-weight: bold;
+@media (max-width: 768px) {
+    .stack-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
-
-    .contacto-item a {
-        text-decoration: none;
-        color: #007BFF;
-    }
-
-    .contacto-item a:hover {
-        text-decoration: underline;
-    }
-
+}

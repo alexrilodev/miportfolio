@@ -8,17 +8,26 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>¡Bienvenido/a a mi portfolio!</h1>
-        <h1><strong>Álex Ricart López</strong></h1>
-        <img src="img/fotoperfil.jpg" style="display: block; margin: 0 auto; width: 200px; height: auto; border: 5px solid #1c6297; border-radius: 35%; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); padding: 5px;" />
-        <h2><strong>¿Quién soy?</strong></h2>
-        <p>Desarrollador web con formación en DAW, graduado en Psicología y máster en Dirección y Gestión de RRHH.</p>
-        <p>Mi trayectoria profesional consta de 4 años en ámbito de RRHH y 2 años en ámbito socio-educativo como Técnico de Formación y Orientación laboral para perfiles tecnológicos.</p>
-        <p>La pasión por la tecnología siempre me ha acompañado y por ello, actualmente me estoy formando como desarrollador web.</p>
+    <header id="quien-soy">
+        <div class="header-container">
+            <div class="foto-container">
+                <img src="img/fotoperfil.jpg" alt="Foto de perfil" />
+            </div>
+            <div class="texto-container">
+                <h1 style="font-size: 65px; color: #f7e99d">¡Bienvenido/a a mi portfolio!</h1>
+                <h2><strong>Soy Álex Ricart López:</strong></h2>
+                <h3>Desarrollador web con formación en DAW, graduado en Psicología y máster en Dirección y Gestión de RRHH. Mi trayectoria profesional consta de:</h3>
+                <ul>
+                    <li>4 años en ámbito organizacional como <strong>Técnico de RRHH.</strong></li>
+                    <li>2 años en ámbito socio-educativo como <strong>Técnico de Formación y Orientación laboral</strong> para desarrolladores juniors.</li>
+                </ul>
+                <h3> La pasión por la tecnología siempre me ha acompañado y por ello, actualmente me estoy formando como Desarrollador Web.</h3>
+            </div>
+        </div>
     </header>
-    <nav>
+    <nav class="navbar">
         <ul>
+            <li><a href="#quien-soy">¿Quién soy?</a></li>
             <li><a href="#stack-tecnologico">Stack Tecnológico</a></li>
             <li><a href="#proyectos">Proyectos</a></li>
             <li><a href="#habilidades">Habilidades</a></li>

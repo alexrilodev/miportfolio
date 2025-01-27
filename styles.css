@@ -3,7 +3,7 @@
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #84c0ee;
+    background-color: #5a83a3;
     color: #333;
 }
 
@@ -11,30 +11,95 @@ header
 {
     background: #333;
     color: #fff;
-    padding: 1rem;
-    text-align: center;
+    padding: 16rem;
 }
 
-nav ul 
-{
-    list-style: none;
-    padding: 0;
-    text-align: center;
-    background: #444;
-    margin: 0;
+.header-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
-nav ul li
-{
-    display: inline;
-    margin: 0 10px;
+.foto-container img {
+    width: 300px;
+    height: auto;
+    border: 20px groove #1c6297;
+    border-radius: 35%;
+    box-shadow: 0 4px 500px #4f548d;
+    padding: 15px;
 }
 
-nav ul li a
-{
-    color: #fff;
-    text-decoration: solid;
+.texto-container {
+    flex: 1;
 }
+
+    .texto-container h1,
+    .texto-container h2,
+    .texto-container h3,
+    .texto-container ul {
+        margin: 0 0 25px 0;
+        text-align: left;
+    }
+
+    .texto-container ul {
+        padding-left: 100px;
+    }
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .texto-container {
+        text-align: center;
+    }
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background: #f7e99d;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    padding: 10px 0;
+    transition: top 0.3s;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+            nav ul li a {
+                font-size: 20px;
+                font-weight: 700;
+                color: #333;
+                text-decoration: none;
+                padding: 8px 12px;
+                border-radius: 5px;
+                transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+            }
+
+                nav ul li a:hover {
+                    background-color: #ffdd00;
+                    color: #000;
+                    transform: scale(1.05);
+                }
+
 
 section
 {

@@ -362,6 +362,13 @@ section {
         font-weight: bold;
     }
 
+/* Elementos resaltados */
+
+.resaltar {
+    color: #f7e99d;
+    font-weight: bold;
+}
+
 footer {
     background-color: #333;
     color: #fff;

@@ -33,7 +33,7 @@ header {
     height: auto;
     border: 15px groove #1c6297;
     border-radius: 35%;
-    box-shadow: 0 4px 20px #4f548d;
+    box-shadow: 0 4px 500px #4f548d;
     padding: 10px;
 }
 

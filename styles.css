@@ -12,7 +12,7 @@ html {
     font-size: 16px;
 }
 
-/* Header */
+/* HEADER */
 header {
     background: #333;
     color: #fff;
@@ -53,7 +53,7 @@ header {
         padding-left: 2rem;
     }
 
-/* Botón de descarga */
+/* BOTÓN DESCARGA CV */
     .texto-container a.btn-download {
         display: inline-block;
         margin-top: 20px;
@@ -88,7 +88,7 @@ header {
     }
 }
 
-/* Navigation */
+/* NAVIGATION */
 nav {
     position: fixed;
     top: 0;
@@ -128,17 +128,17 @@ nav {
                     transform: scale(1.05);
                 }
 
-/* Section */
+/* SECCIONES */
 section {
     padding: 2rem;
     margin: 20px auto;
     max-width: 800px;
-    background: #fff;
+    background: #f4f4f4;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Stack Tecnológico */
+/* TECH */
 #stack-tecnologico {
     text-align: center;
     padding: 20px;
@@ -171,7 +171,7 @@ section {
     color: #333;
 }
 
-/* Proyectos */
+/* PROYECTOS */
 #proyectos {
     text-align: center;
     background-color: #f4f4f4;
@@ -213,10 +213,10 @@ section {
             transform: scale(1.1);
         }
 
-/* Formación y Experiencia */
+/* FORMACIÓN Y EXPERIENCIA */
 #formacion {
     text-align: center;
-    background-color: #fff;
+    background-color: #f4f4f4;
     padding: 20px;
 }
 
@@ -247,7 +247,7 @@ section {
 
 #experiencia {
     text-align: center;
-    background-color: #fff;
+    background-color: #f4f4f4;
     padding: 20px;
 }
 
@@ -288,7 +288,7 @@ section {
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
     }
 
-/* Habilidades */
+/* HABILIDADES */
 #habilidades {
     text-align: center;
     padding: 20px;
@@ -303,7 +303,7 @@ section {
 }
 
 .habilidades {
-    background-color: #f0f0f0;
+    background-color: #f4f4f4;
     color: #333;
     font-size: 1em;
     font-weight: bold;
@@ -319,7 +319,7 @@ section {
         color: #000;
     }
 
-/* Contacto */
+/* CONTACTO */
 #contacto {
     text-align: center;
     padding: 20px;
@@ -362,7 +362,7 @@ section {
         font-weight: bold;
     }
 
-/* Elementos resaltados */
+/* ELEMENTOS RESALTADOS */
 
 .resaltar {
     color: #f7e99d;

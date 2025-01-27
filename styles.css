@@ -53,6 +53,26 @@ header {
         padding-left: 2rem;
     }
 
+/* Botón de descarga */
+    .texto-container a.btn-download {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 12px 25px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #fff;
+        background-color: #007BFF;
+        text-decoration: none;
+        border-radius: 8px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+        .texto-container a.btn-download:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+
 @media (max-width: 768px) {
     .header-container {
         flex-direction: column;
@@ -192,6 +212,81 @@ section {
         #proyectos img:hover {
             transform: scale(1.1);
         }
+
+/* Formación y Experiencia */
+#formacion {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+}
+
+    #formacion ul {
+        text-align: left;
+        padding: 20px;
+        list-style: none;
+    }
+
+        #formacion ul li {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+            #formacion ul li div {
+                flex: 1;
+            }
+
+            #formacion ul li img {
+                width: 100px;
+                height: auto;
+                border-radius: 8px;
+                box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+                margin-left: 20px;
+            }
+
+#experiencia {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+}
+
+    #experiencia ul {
+        text-align: left;
+        padding: 20px;
+        list-style: none;
+    }
+
+        #experiencia ul li {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+            #experiencia ul li div {
+                flex: 1;
+            }
+
+            #experiencia ul li img {
+                width: 100px;
+                height: auto;
+                border-radius: 8px;
+                box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+                margin-left: 20px;
+            }
+
+#formacion ul li img,
+#experiencia ul li img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+    #formacion ul li img:hover,
+    #experiencia ul li img:hover {
+        transform: scale(1.1);
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    }
 
 /* Habilidades */
 #habilidades {

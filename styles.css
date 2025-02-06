@@ -35,8 +35,8 @@ header {
     height: auto;
     border: 15px groove #345c72;
     border-radius: 35%;
-    box-shadow: 0 4px 500px #345c72;
     padding: 10px;
+    filter: drop-shadow(0 4px 150px #345c72);
 }
 
 .texto-container {
@@ -159,7 +159,7 @@ section {
     height: auto;
     border: 2px solid #ccc;
     border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.2));
     transition: transform 0.2s ease;
 }
 
@@ -209,10 +209,12 @@ section {
         height: auto;
         border-radius: 5px;
         transition: transform 0.2s ease;
+        filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.2));
     }
 
         #proyectos img:hover {
             transform: scale(1.1);
+            filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.3));
         }
 
 /* FORMACIÓN Y EXPERIENCIA */
@@ -243,8 +245,9 @@ section {
                 width: 100px;
                 height: auto;
                 border-radius: 8px;
-                box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+                filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.2));
                 margin-left: 20px;
+                transition: transform 0.3s ease, filter 0.3s ease;
             }
 
 #experiencia {
@@ -274,8 +277,9 @@ section {
                 width: 100px;
                 height: auto;
                 border-radius: 8px;
-                box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+                filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.2));
                 margin-left: 20px;
+                transition: transform 0.3s ease, filter 0.3s ease;
             }
 
 #formacion ul li img,
@@ -287,7 +291,7 @@ section {
     #formacion ul li img:hover,
     #experiencia ul li img:hover {
         transform: scale(1.1);
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+        filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.3));
     }
 
 /* HABILIDADES */

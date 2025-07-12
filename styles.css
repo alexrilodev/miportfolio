@@ -31,10 +31,10 @@ header {
 }
 
 .foto-container img {
-    width: 250px;
+    width: 320px;
     height: auto;
-    border: 15px groove #345c72;
-    border-radius: 35%;
+    border: 10px solid #345c72;
+    border-radius: 43%;
     padding: 10px;
     filter: drop-shadow(0 4px 150px #345c72);
 }

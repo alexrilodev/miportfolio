@@ -26,7 +26,7 @@
                     <li>2 años en ámbito socio-educativo como <strong>Técnico de Formación y Orientación laboral</strong> para desarrolladores juniors.</li>
                 </ul>
                 <h3> La pasión por la tecnología siempre me ha acompañado y por ello, actualmente me estoy formando como <span class="resaltar">Desarrollador Web</span>.</h3>
-                <a download href="docs/Álex Ricart López_CV_Dev.pdf" target="_blank" class="btn-download">Descargar CV</a>
+                <a download href="CV/Álex Ricart López_CV_Dev.pdf" target="_blank" class="btn-download">Descargar CV</a>
             </div>
         </div>
     </header>
@@ -39,6 +39,7 @@
             <li><a href="#stack-tecnologico">Stack Tecnológico</a></li>
             <li><a href="#proyectos">Proyectos</a></li>
             <li><a href="#formacion">Formación</a></li>
+            <li><a href="#certificacion">Certificaciones</a></li>
             <li><a href="#experiencia">Experiencia</a></li>
             <li><a href="#habilidades">Soft Skills</a></li>
             <li><a href="#contacto">Contacto</a></li>
@@ -165,6 +166,28 @@
         </ul>
     </section>
 
+    <!--CERTIFICACIONES-->
+
+     <section id="certificacion">
+        <h2>🥇 Certificaciones</h2>
+        <div class="stack-grid">
+            <div class="stack-item">
+                <h3>HTML</h3>
+                <img src="cursos/Curso HTML.jpg" alt="HTML" />
+            </div>
+             <div class="stack-item">
+                <h3>CSS</h3>
+                <img src="cursos/Curso CSS.jpg" alt="CSS" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div id="lightbox">
+        <span class="cerrar">&times;</span>
+        <img class="lightbox-contenido" id="imagen-ampliada">
+    </div>
+
     <!--EXPERIENCIA-->
 
     <section id="experiencia">
@@ -195,7 +218,6 @@
     </section>
 
     <!--HABILIDADES-->
-
 
     <section id="habilidades">
         <h2>🧠 Soft Skills</h2>
@@ -256,5 +278,27 @@
     <footer>
         <p>© 2025 Álex Ricart López</p>
     </footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const lightbox = document.getElementById("lightbox");
+    const imagenAmpliada = document.getElementById("imagen-ampliada");
+    const cerrar = document.querySelector(".cerrar");
+
+    document.querySelectorAll("#certificacion img").forEach(img => {
+        img.addEventListener("click", function() {
+            lightbox.style.display = "block";
+            imagenAmpliada.src = this.src;
+        });
+    });
+
+    lightbox.addEventListener("click", function(e) {
+        if (e.target === lightbox) {
+            lightbox.style.display = "none";
+        }
+    });
+});
+</script>
+
 </body>
 </html>

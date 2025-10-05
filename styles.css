@@ -28,6 +28,9 @@ header {
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 100px;
+    padding: 20px;
 }
 
 .foto-container img {

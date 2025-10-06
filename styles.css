@@ -183,27 +183,32 @@ nav ul li a:hover {
 
 /* MODO MÓVIL */
 @media (max-width: 768px) {
-    #toggle-nav {
-        display: inline-block;
-    }
+  #toggle-nav {
+      display: inline-block;
+  }
 
-    nav ul {
-        display: none;
-        flex-direction: column;
-        background-color: #f7e99d;
-        padding: 10px;
-        margin-top: 10px;
-    }
+  nav ul {
+      flex-direction: column;
+      background-color: #f7e99d;
+      overflow: hidden;
+      max-height: 0;
+      opacity: 0;
+      transform: translateY(-10px);
+      transition: max-height 0.5s ease, opacity 0.4s ease, transform 0.4s ease;
+  }
 
-    nav ul.show {
-        display: flex;
-    }
+  nav ul.show {
+      max-height: 500px; /* altura suficiente para todos los enlaces */
+      opacity: 1;
+      transform: translateY(0);
+  }
 
-    nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
+  nav ul li {
+      display: block;
+      margin: 10px 0;
+  }
 }
+
 
 /* SECCIONES */
 section {

@@ -25,6 +25,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 /* Animación navegación */
 
+/* Animación navegación */
 document.addEventListener('DOMContentLoaded', () => {
   const nav = document.querySelector('nav');
   const toggleBtn = document.getElementById('toggle-nav');
@@ -32,12 +33,12 @@ document.addEventListener('DOMContentLoaded', () => {
   const navLinks = document.querySelectorAll('nav ul li a');
   let isDesktop = window.innerWidth > 768;
 
-  // Mostrar / ocultar menú en móviles
+  // Mostrar / ocultar menú en móviles con transición suave
   toggleBtn.addEventListener('click', () => {
     navList.classList.toggle('show');
   });
 
-  // Ocultar menú móvil al clicar un enlace
+  // Ocultar menú móvil suavemente al clicar un enlace
   navLinks.forEach(link => {
     link.addEventListener('click', () => {
       if (window.innerWidth <= 768) {
@@ -46,32 +47,33 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Ocultar nav al hacer scroll en escritorio (siempre oculto)
+  // Ocultar nav al hacer scroll en escritorio
   window.addEventListener('scroll', () => {
     if (isDesktop) {
-      nav.style.top = '-80px'; // siempre oculto al hacer scroll
+      nav.style.top = '-80px';
     }
   });
 
-  // Mostrar nav si el ratón está en el borde superior (solo escritorio)
+  // Mostrar nav si el ratón está en el borde superior
   document.addEventListener('mousemove', (e) => {
     if (isDesktop) {
       if (e.clientY <= 50) {
-        nav.style.top = '0'; // reaparece si el ratón toca el borde superior
+        nav.style.top = '0';
       } else {
-        nav.style.top = '-80px'; // desaparece si se mueve fuera del borde
+        nav.style.top = '-80px';
       }
     }
   });
 
-  // Detectar cambio de tamaño de pantalla para alternar modo escritorio/móvil
+  // Detectar cambio de tamaño de pantalla
   window.addEventListener('resize', () => {
     isDesktop = window.innerWidth > 768;
     if (isDesktop) {
       navList.classList.remove('show');
       nav.style.top = '0';
     } else {
-      nav.style.top = '0'; // en móvil siempre visible en nav inferior
+      nav.style.top = '0';
     }
   });
 });
+

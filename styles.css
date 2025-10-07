@@ -9,6 +9,7 @@
 
 html {
     scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
     font-size: 16px;
 }
 
@@ -118,6 +119,10 @@ header {
     header {
         padding: 6rem 1rem;
     }
+    
+      body {
+    padding-top: 60px;
+  }
 }
 
 /* NAVIGATION */

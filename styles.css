@@ -215,17 +215,15 @@ nav ul li a:hover {
 @media (max-width: 768px) {
   #toggle-nav {
       display: inline-block;
-      /* Posición en la parte inferior y centrado */
       position: fixed;
-      bottom: 30px;        /* distancia desde el borde inferior */
-      left: 50%;           /* punto medio horizontal */
-      transform: translateX(-50%); /* centra exactamente */
+      top: 20px;          /* distancia desde el borde superior */
+      right: 20px;        /* distancia desde el borde derecho */
       z-index: 1002;       /* encima del fondo oscuro */
   }
 
   #toggle-nav:hover {
       background-color: #ffdd00;
-      transform: translateX(-50%) scale(1.1); /* mantener centrado al hacer hover */
+      transform: scale(1.1);
   }
 
   nav ul {

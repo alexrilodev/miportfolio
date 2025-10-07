@@ -247,7 +247,7 @@ nav ul li a:hover {
 
   nav ul li {
       display: block;
-      margin: 20px 0;       /* espacio entre enlaces */
+      margin: 25px 0;       /* espacio entre enlaces */
       width: auto;          /* ancho automático */
       text-align: center;   /* centra el texto dentro del li */
   }

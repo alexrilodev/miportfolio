@@ -68,6 +68,8 @@ header {
 .texto-container a.btn-download {
     display: inline-block;
     margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 10px;
     padding: 12px 25px;
     font-size: 16px;
     font-weight: bold;
@@ -321,17 +323,6 @@ section {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-#proyectos a {
-    text-decoration: none;
-    color: #333;
-    transition: color 0.3s ease, transform 0.2s ease;
-}
-
-#proyectos a:hover {
-    color: #007BFF;
-    transform: scale(1.05);
-}
-
 #proyectos img {
     max-width: 100%;
     height: auto;
@@ -499,12 +490,6 @@ section {
     transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
-.habilidades:hover {
-    transform: scale(1.1);
-    background-color: #ffdd00;
-    color: #000;
-}
-
 /* CONTACTO */
 #contacto {
     text-align: center;
@@ -582,3 +567,41 @@ body, html {
         text-align: center !important;
     }
 }
+
+/* BOTÓN CAMBIO IDIOMA */
+.lang-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 1);
+  color: #333;
+  text-decoration: none;
+  padding: 5px 5px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+  border: none;
+}
+
+.lang-btn:hover {
+  background-color: #fff;
+  color: #000;
+  transform: scale(1.05);
+}
+
+/* Banderas */
+.flag {
+  width: 30px;
+  height: auto;
+}
+
+/* Idioma activo */
+.lang-btn.active {
+  outline: 3px solid #007bff;
+  background-color: #ffeb6b;
+}
+

@@ -1,0 +1,60 @@
+{
+  "page_title": "Portfolio - Álex Ricart López",
+
+  "nav_about": "Sobre mí",
+  "nav_tech_stack": "Stack Tecnológico",
+  "nav_projects": "Proyectos",
+  "nav_education": "Formación",
+  "nav_certifications": "Certificaciones",
+  "nav_experience": "Experiencia",
+  "nav_soft_skills": "Habilidades",
+  "nav_contact": "Contacto",
+
+  "hero_title_1": "Soy <span class='resaltar'>Desarrollador Web Full Stack</span>, con una trayectoria que combina <span class='resaltar'>tecnología, formación y recursos humanos</span>. Mi experiencia profesional incluye:",
+  "experience_1": "4 años en la gestión del talento para clientes de diversos sectores profesionales.",
+  "experience_2": "2 años en la orientación y la formación de profesionales del ámbito tecnológico.",
+  "hero_title_2": "Este enfoque integral me permite aportar una <span class='resaltar'>visión estratégica</span> en cualquier proyecto que lleve a cabo.",
+  "hero_title_3": "Actualmente, me centro en el <span class='resaltar'>desarrollo web</span> y la <span class='resaltar'>formación TIC</span>, colaborando en iniciativas que promueven innovación, aprendizaje y crecimiento profesional.",
+  "hero_title_4": "Me considero una persona <span class='resaltar'>curiosa, creativa y comprometida</span> con la mejora continua en cada proyecto que asumo.",
+  "download_cv_es": "CV - Español",
+  "download_cv_en": "CV - Inglés",
+
+  "stack_title": "💻 Stack Tecnológico",
+
+  "projects_title": "📊 Proyectos",
+  "project_orientait_description": "Plataforma web que busca cubrir necesidades de <strong>empresas</strong> y <strong>candidatos</strong> del <strong>sector IT</strong>. Desarrollo Full Stack: <strong>HTML - CSS</strong> (maquetación - diseño) / <strong>JavaScript</strong> (front-end) / <strong>PHP</strong> (back-end) / <strong>Bootstrap</strong> (framework) / <strong>MySQL</strong> (bbdd) / <strong>InfinityFree</strong> (hosting gratuito). Dispone de capacidad responsive, formularios de validación registro/login, funcionalidad según rol usuario (candidato / empresa / admin), publicación y gestión de ofertas, inscripciones a ofertas, filtros de búsqueda, subida de CV y material de orientación laboral, así como solicitud de citas calendarizadas con el admin.",
+  "project_link": "🌐 Link proyecto",
+  "project_video": "🎥 Vídeo Demo",
+  "project_portfolio_title": "Portfolio personalizado",
+  "project_portfolio_description": "Proyecto de desarrollo web de mi portfolio actual. Desarrollado con <strong>HTML, CSS, JavaScript</strong> y con capacidad <strong>responsive</strong>. Dispone de animaciones básicas, navegación adaptada, hipervínculos externos y descarga de archivos adjuntos.",
+  "project_repository": "⚙️ Repositorio proyecto",
+  "project_rock_paper_scissors_title": "Juego Piedra, Papel, Tijeras",
+  "project_rock_paper_scissors_description": "Juego interactivo de Piedra, Papel, Tijeras desarrollado con <strong>HTML, CSS y JavaScript</strong>. Dispone de detección de datos no válidos, historial de partidas y reseteo de partidas.",
+
+  "education_title": "🎓 Formación",
+  "education_web_development": "Desarrollo de Aplicaciones Web",
+  "education_hr_management": "Dirección y Gestión de RRHH",
+  "education_hr_management_description": "<strong>Máster Universitario</strong> <br />2019 - 2021 <br /> Universitat Oberta de Catalunya",
+  "education_psychology": "Psicología",
+  "education_psychology_description": "<strong>Grado Universitario</strong> <br />2015 - 2019 <br /> Universitat Autònoma de Barcelona",
+
+  "certification_title": "🥇 Certificaciones",
+
+  "experience_title": "💼 Experiencia",
+  "experience_web_developer": "Desarrollador Web | Formador TIC",
+  "experience_web_developer_description": "Programación <strong>Full Stack</strong> de proyectos personales y profesionales. Colaboración con entidades en <strong>formaciones TIC</strong>. <br />Actualidad <br /> Profesional Independiente",
+  "experience_project_coordinator": "Coordinador de Proyectos Pedagógicos - TIC",
+  "experience_project_coordinator_description": "Gestión y coordinación de <strong>proyectos formativos</strong> en alfabetización digital, competencias básicas TIC y/o programación web técnica. <strong>Orientación y prospección laboral</strong>. <br />2023 - Actualidad <br /> Fundación Esplai",
+  "experience_hr_technician": "Técnico de RRHH",
+  "experience_hr_technician_description": "Selección de personal para diversos sectores profesionales y clientes, administración laboral completa y <strong>gestión del talento</strong>. <br />2019 - 2023 <br /> Synergie - Iman - Manpower",
+
+  "soft_skills_title": "🧠 Habilidades",
+  "soft_skills_assertiveness": "Asertividad",
+  "soft_skills_resilience": "Resiliencia",
+  "soft_skills_proactivity": "Proactividad",
+  "soft_skills_creativity": "Creatividad",
+  "soft_skills_problem_solving": "Resolución de problemas",
+  "soft_skills_social": "Habilidades sociales",
+
+  "contact_title": "💬 Contacto"
+}

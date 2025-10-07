@@ -1,0 +1,60 @@
+{
+  "page_title": "Portfolio - Álex Ricart López",
+
+  "nav_about": "About Me",
+  "nav_tech_stack": "Tech Stack",
+  "nav_projects": "Projects",
+  "nav_education": "Education",
+  "nav_certifications": "Certifications",
+  "nav_experience": "Experience",
+  "nav_soft_skills": "Soft Skills",
+  "nav_contact": "Contact",
+
+  "hero_title_1": "I am a <span class='resaltar'>Full Stack Web Developer</span> with a background that combines <span class='resaltar'>technology, training, and human resources</span>. My professional experience includes:",
+  "experience_1": "4 years in talent management for clients across various professional sectors.",
+  "experience_2": "2 years providing guidance and training for professionals in the tech field.",
+  "hero_title_2": "This comprehensive approach allows me to bring a <span class='resaltar'>strategic vision</span> to every project I undertake.",
+  "hero_title_3": "Currently, I focus on <span class='resaltar'>web development</span> and <span class='resaltar'>ICT training</span>, collaborating on initiatives that promote innovation, learning, and professional growth.",
+  "hero_title_4": "I consider myself a <span class='resaltar'>curious, creative, and committed</span> person, always striving for continuous improvement in every project I take on.",
+  "download_cv_es": "CV - Spanish",
+  "download_cv_en": "CV - English",
+
+  "stack_title": "💻 Tech Stack",
+
+  "projects_title": "📊 Projects",
+  "project_orientait_description": "Web platform designed to meet the needs of <strong>companies</strong> and <strong>candidates</strong> in the <strong>IT sector</strong>. Full Stack Development: <strong>HTML - CSS</strong> (layout - design) / <strong>JavaScript</strong> (front-end) / <strong>PHP</strong> (back-end) / <strong>Bootstrap</strong> (framework) / <strong>MySQL</strong> (database) / <strong>InfinityFree</strong> (free hosting). It features responsive design, registration/login validation, user-role functionality (candidate / company / admin), job posting and management, job applications, search filters, CV uploads, and career guidance resources, as well as scheduled appointments with the admin.",
+  "project_link": "🌐 Project Link",
+  "project_video": "🎥 Demo Video",
+  "project_portfolio_title": "Custom Portfolio",
+  "project_portfolio_description": "Development project of my personal portfolio website. Built with <strong>HTML, CSS, and JavaScript</strong> and fully <strong>responsive</strong>. Includes basic animations, adaptive navigation, external links, and file downloads.",
+  "project_repository": "⚙️ Project Repository",
+  "project_rock_paper_scissors_title": "Rock, Paper, Scissors Game",
+  "project_rock_paper_scissors_description": "Interactive Rock, Paper, Scissors game built with <strong>HTML, CSS, and JavaScript</strong>. Includes invalid data detection, match history, and game reset functionality.",
+
+  "education_title": "🎓 Education",
+  "education_web_development": "Web Application Development",
+  "education_hr_management": "Human Resources Management",
+  "education_hr_management_description": "<strong>Master’s Degree</strong> <br />2019 - 2021 <br /> Universitat Oberta de Catalunya",
+  "education_psychology": "Psychology",
+  "education_psychology_description": "<strong>Bachelor’s Degree</strong> <br />2015 - 2019 <br /> Universitat Autònoma de Barcelona",
+
+  "certification_title": "🥇 Certifications",
+
+  "experience_title": "💼 Experience",
+  "experience_web_developer": "Web Developer | ICT Trainer",
+  "experience_web_developer_description": "Full Stack programming of personal and professional projects. Collaboration with organizations in <strong>ICT training</strong>. <br />Present <br /> Independent Professional",
+  "experience_project_coordinator": "Pedagogical Project Coordinator - ICT",
+  "experience_project_coordinator_description": "Management and coordination of <strong>training projects</strong> in digital literacy, basic ICT skills, and/or technical web programming. <strong>Career guidance and labor market outreach</strong>. <br />2023 - Present <br /> Fundación Esplai",
+  "experience_hr_technician": "HR Technician",
+  "experience_hr_technician_description": "Personnel selection for different professional sectors and clients, full labor administration, and <strong>talent management</strong>. <br />2019 - 2023 <br /> Synergie - Iman - Manpower",
+
+  "soft_skills_title": "🧠 Soft Skills",
+  "soft_skills_assertiveness": "Assertiveness",
+  "soft_skills_resilience": "Resilience",
+  "soft_skills_proactivity": "Proactivity",
+  "soft_skills_creativity": "Creativity",
+  "soft_skills_problem_solving": "Problem Solving",
+  "soft_skills_social": "Social skills",
+
+  "contact_title": "💬 Contact"
+}

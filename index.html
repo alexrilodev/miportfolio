@@ -7,7 +7,7 @@
     <meta name="description" content="Portfolio de Álex Ricart López - Desarrollador Web Full Stack">
     <link rel="preload" as="image" href="assets/img/fotoperfil.jpg">
     <link rel="preload" as="image" href="assets/img/backgroundheader.png">
-    <title>Mi Portfolio</title>
+    <title data-translate="page_title"> Portfolio - Álex Ricart López</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="img/portfolio.png" type="image/x-icon">
 </head>
@@ -18,14 +18,14 @@
     <nav>
     <button id="toggle-nav" aria-label="Mostrar u ocultar menú">☰</button>
     <ul>
-        <li><a href="#sobre-mi">Sobre mi</a></li>
-        <li><a href="#stack-tecnologico">Stack Tecnológico</a></li>
-        <li><a href="#proyectos">Proyectos</a></li>
-        <li><a href="#formacion">Formación</a></li>
-        <li><a href="#certificacion">Certificaciones</a></li>
-        <li><a href="#experiencia">Experiencia</a></li>
-        <li><a href="#habilidades">Soft Skills</a></li>
-        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#sobre-mi" data-translate="nav_about">Sobre mi</a></li>
+        <li><a href="#stack-tecnologico" data-translate="nav_tech_stack">Stack Tecnológico</a></li>
+        <li><a href="#proyectos" data-translate="nav_projects">Proyectos</a></li>
+        <li><a href="#formacion" data-translate="nav_education">Formación</a></li>
+        <li><a href="#certificacion" data-translate="nav_certifications">Certificaciones</a></li>
+        <li><a href="#experiencia" data-translate="nav_experience">Experiencia</a></li>
+        <li><a href="#habilidades" data-translate="nav_soft_skills">Competencias</a></li>
+        <li><a href="#contacto" data-translate="nav_contact">Contacto</a></li>
     </ul>
     </nav>
 
@@ -38,16 +38,18 @@
             </div>
             <div class="texto-container">
                 <h1>👨🏻‍💻 Álex Ricart López</h1>
-                <h3>Soy <span class="resaltar">Desarrollador Web Full Stack</span>, con una trayectoria que combina <span class="resaltar">tecnología, formación y recursos humanos</span>. Mi experiencia profesional incluye:</h3>
+                    <button class="lang-btn" data-lang="es" aria-label="Cambiar a español"><img src="img/flag_es.png" alt="Español" class="flag" /></button>
+                    <button class="lang-btn" data-lang="en" aria-label="Switch to English"><img src="img/flag_en.png" alt="English" class="flag" /></button>
+                <h3 data-translate="hero_title_1">Soy <span class="resaltar">Desarrollador Web Full Stack</span>, con una trayectoria que combina <span class="resaltar">tecnología, formación y recursos humanos</span>. Mi experiencia profesional incluye:</h3>
                 <ul>
-                    <li>4 años en la gestión del talento para clientes de diversos sectores profesionales.</li>
-                    <li>2 años en la orientación y la formación de profesionales del ámbito tecnológico.</li>
+                    <li data-translate="experience_1">4 años en la gestión del talento para clientes de diversos sectores profesionales.</li>
+                    <li data-translate="experience_2">2 años en la orientación y la formación de profesionales del ámbito tecnológico.</li>
                 </ul>
-                <h3>Este enfoque integral me permite aportar una <span class="resaltar">visión estratégica</span> en cualquier proyecto que lleve a cabo.</h3>
-                <h3>Actualmente, me centro en el <span class="resaltar">desarrollo web</span> y la <span class="resaltar">formación TIC</span>, colaborando en iniciativas que promueven innovación, aprendizaje y crecimiento profesional.</h3>
-                <h3>Me considero una persona <span class="resaltar">curiosa, creativa y comprometida</span> con la mejora continua en cada proyecto que asumo.</h3>
-                <a href="CV/Álex Ricart López_CV_ES.pdf" target="_blank" class="btn-download">CV - Español</a><br>
-                <a href="CV/Álex Ricart López_CV_EN.pdf" target="_blank" class="btn-download">CV - Inglés</a>
+                <h3 data-translate="hero_title_2">Este enfoque integral me permite aportar una <span class="resaltar">visión estratégica</span> en cualquier proyecto que lleve a cabo.</h3>
+                <h3 data-translate="hero_title_3">Actualmente, me centro en el <span class="resaltar">desarrollo web</span> y la <span class="resaltar">formación TIC</span>, colaborando en iniciativas que promueven innovación, aprendizaje y crecimiento profesional.</h3>
+                <h3 data-translate="hero_title_4">Me considero una persona <span class="resaltar">curiosa, creativa y comprometida</span> con la mejora continua en cada proyecto que asumo.</h3>
+                <a href="CV/Álex Ricart López_CV_ES.pdf" target="_blank" class="btn-download" data-translate="download_cv_es">CV - Español</a>
+                <a href="CV/Álex Ricart López_CV_EN.pdf" target="_blank" class="btn-download" data-translate="download_cv_en">CV - Inglés</a>
 
             </div>
         </div>
@@ -58,7 +60,7 @@
     <!--TECH-->
 
     <section id="stack-tecnologico">
-        <h2>💻 Stack Tecnológico</h2>
+        <h2 data-translate="stack_title">💻 Stack Tecnológico</h2>
         <div class="stack-grid">
             <div class="stack-item">
                 <h3>HTML</h3>
@@ -98,11 +100,11 @@
     <!--PROYECTOS-->
 
     <section id="proyectos">
-        <h2>📊 Proyectos</h2>
+        <h2 data-translate="projects_title">📊 Proyectos</h2>
         <ul>
             <li>
                 <h3>Orienta IT</h3>
-                <p>
+                <p data-translate="project_orientait_description">
                     Plataforma web que busca cubrir necesidades de <strong>empresas</strong> y <strong>candidatos</strong> del <strong>sector IT</strong>. Desarrollo Full Stack: 
                     <strong>HTML - CSS</strong> (maquetación - diseño) / <strong>JavaScript</strong> (front-end) / <strong>PHP</strong> (back-end) / <strong>Bootstrap</strong> (framework) / <strong>MySQL</strong> (bbdd) / <strong>InfinityFree</strong> (hosting gratuito).
                     Dispone de capacidad responsive, formularios de validación registro/login, funcionalidad según rol usuario (candidato / empresa / admin), publicación y gestión de ofertas, inscripciones a ofertas, filtros de búsqueda, 
@@ -111,34 +113,34 @@
                 <img src="img/orientait.png" alt="Orienta IT" style="display:block; margin: 0 auto; width: 200px; height: auto;" />
                 </a>
                 <div class="texto-proyecto">
-                    <a href="https://orientait.free.nf" target="_blank" class="btn-action">🌐 Link proyecto</a>
+                    <a href="https://orientait.free.nf" target="_blank" class="btn-action" data-translate="project_link">🌐 Link proyecto</a>
                 </div>
                 <div class="texto-proyecto">
-                    <a href="https://drive.google.com/file/d/19_qORI9QLkeAqhB-sGuQUmD-w67BTSzz/view?usp=sharing" target="_blank" class="btn-action">🎥 Vídeo Demo</a>
+                    <a href="https://drive.google.com/file/d/19_qORI9QLkeAqhB-sGuQUmD-w67BTSzz/view?usp=sharing" target="_blank" class="btn-action" data-translate="project_video">🎥 Vídeo Demo</a>
                 </div>
             </li>
             <li>
-                <h3>Portfolio personalizado</h3>
-                <p>
+                <h3 data-translate="project_portfolio_title">Portfolio personalizado</h3>
+                <p data-translate="project_portfolio_description">
                     Proyecto de desarrollo web de mi portfolio actual. Desarrollado con <strong>HTML, CSS, JavaScript</strong> y con capacidad <strong>responsive</strong>. 
                     Dispone de animaciones básicas, navegación adaptada, hipervínculos externos y descarga de archivos adjuntos.
                 </p>
                 <img src="img/portfolio.png" alt="Portfolio personalizado" style="display:block; margin: 0 auto; width: 200px; height: auto;" />
                 <div class="texto-proyecto">
-                    <a href="https://github.com/alexrilodev/miportfolio" target="_blank" class="btn-action">⚙️ Repositorio proyecto</a>
+                    <a href="https://github.com/alexrilodev/miportfolio" target="_blank" class="btn-action" data-translate="project_repository">⚙️ Repositorio proyecto</a>
                 </div>
             </li>
             <li>
-                <h3>Juego Piedra, Papel, Tijeras</h3>
-                <p>
+                <h3 data-translate="project_rock_paper_scissors_title">Juego Piedra, Papel, Tijeras</h3>
+                <p data-translate="project_rock_paper_scissors_description">
                     Juego interactivo de Piedra, Papel, Tijeras desarrollado con <strong>HTML, CSS y JavaScript</strong>. Dispone de detección de datos no válidos, historial de partidas y reseteo de partidas.
                 </p>
                 <img src="img/proyectopiedrapapeltijeras.png" alt="Juego Piedra, Papel, Tijeras" style="display:block; margin: 0 auto; width: 200px; height: auto;" />
                 <div class="texto-proyecto">
-                    <a href="https://alexrilodev.github.io/piedrapapeltijeras" target="_blank" class="btn-action">🌐 Link proyecto</a>
+                    <a href="https://alexrilodev.github.io/piedrapapeltijeras" target="_blank" class="btn-action" data-translate="project_link">🌐 Link proyecto</a>
                 </div>
                 <div class="texto-proyecto">
-                    <a href="https://drive.google.com/file/d/1khRZT7NjpP8XAlRvREofd3aSAJY2QwPc/view?usp=sharing" target="_blank" class="btn-action">🎥 Vídeo Demo</a>
+                    <a href="https://drive.google.com/file/d/1khRZT7NjpP8XAlRvREofd3aSAJY2QwPc/view?usp=sharing" target="_blank" class="btn-action" data-translate="project_video">🎥 Vídeo Demo</a>
                 </div>
             </li>
         </ul>
@@ -147,26 +149,26 @@
     <!--FORMACIÓN-->
 
     <section id="formacion">
-        <h2>🎓 Formación</h2>
+        <h2 data-translate="education_title">🎓 Formación</h2>
         <ul>
             <li>
                 <div>
-                    <h3>Desarrollo de Aplicaciones Web</h3>
-                    <p><strong>Ciclo Formativo Grado Superior</strong> <br />2023 - 2025 <br /> ILERNA</p>
+                    <h3 data-translate="education_web_development">Desarrollo de Aplicaciones Web</h3>
+                    <p><strong>CFGS</strong> <br />2023 - 2025 <br /> ILERNA</p>
                 </div>
                 <img src="img/formacion-daw.png" alt="Imagen DAW" />
             </li>
             <li>
                 <div>
-                    <h3>Dirección y Gestión de RRHH</h3>
-                    <p><strong>Máster Universitario</strong> <br />2019 - 2021 <br /> Universitat Oberta de Catalunya</p>
+                    <h3 data-translate="education_hr_management">Dirección y Gestión de RRHH</h3>
+                    <p data-translate="education_hr_management_description"><strong>Máster Universitario</strong> <br />2019 - 2021 <br /> Universitat Oberta de Catalunya</p>
                 </div>
                 <img src="img/formacion-rrhh.png" alt="Imagen RRHH" />
             </li>
             <li>
                 <div>
-                    <h3>Psicología</h3>
-                    <p><strong>Grado Universitario</strong> <br />2015 - 2019 <br /> Universitat Autònoma de Barcelona</p>
+                    <h3 data-translate="education_psychology">Psicología</h3>
+                    <p data-translate="education_psychology_description"><strong>Grado Universitario</strong> <br />2015 - 2019 <br /> Universitat Autònoma de Barcelona</p>
                 </div>
                 <img src="img/formacion-psicologia.png" alt="Imagen Psicología" />
             </li>
@@ -176,7 +178,7 @@
     <!--CERTIFICACIONES-->
 
      <section id="certificacion">
-        <h2>🥇 Certificaciones</h2>
+        <h2 data-translate="certification_title">🥇 Certificaciones</h2>
         <div class="stack-grid">
             <div class="stack-item">
                 <h3>HTML</h3>
@@ -198,26 +200,26 @@
     <!--EXPERIENCIA-->
 
     <section id="experiencia">
-        <h2>💼 Experiencia</h2>
+        <h2 data-translate="experience_title">💼 Experiencia</h2>
         <ul>
             <li>
                 <div>
-                    <h3>Desarrollador Web | Formador TIC</h3>
-                    <p>Programación <strong>Full Stack</strong> de proyectos personales y profesionales. Colaboración con entidades en <strong>formaciones TIC</strong>. <br />Actualidad <br /> Profesional Independiente</p>
+                    <h3 data-translate="experience_web_developer">Desarrollador Web | Formador TIC</h3>
+                    <p data-translate="experience_web_developer_description">Programación <strong>Full Stack</strong> de proyectos personales y profesionales. Colaboración con entidades en <strong>formaciones TIC</strong>. <br />Actualidad <br /> Profesional Independiente</p>
                 </div>
                 <img src="img/experiencia-dev.png" alt="Imagen Desarrollador" />
             </li>
             <li>
                 <div>
-                    <h3>Coordinador de Proyectos Pedagógicos - TIC</h3>
-                    <p>Gestión y coordinación de <strong>proyectos formativos</strong> en alfabetización digital, competencias básicas TIC y/o programación web técnica. <strong>Orientación y prospección laboral</strong>. <br />2023 - Actualidad <br /> Fundación Esplai</p>
+                    <h3 data-translate="experience_project_coordinator">Coordinador de Proyectos Pedagógicos - TIC</h3>
+                    <p data-translate="experience_project_coordinator_description">Gestión y coordinación de <strong>proyectos formativos</strong> en alfabetización digital, competencias básicas TIC y/o programación web técnica. <strong>Orientación y prospección laboral</strong>. <br />2023 - Actualidad <br /> Fundación Esplai</p>
                 </div>
                 <img src="img/experiencia-orientacion.png" alt="Imagen Orientación" />
             </li>
             <li>
                 <div>
-                    <h3>Técnico de RRHH</h3>
-                    <p>Selección de personal para diversos sectores profesionales y clientes, administración laboral completa y <strong>gestión del talento</strong>. <br />2019 - 2023 <br /> Synergie - Iman - Manpower</p>
+                    <h3 data-translate="experience_hr_technician">Técnico de RRHH</h3>
+                    <p data-translate="experience_hr_technician_description">Selección de personal para diversos sectores profesionales y clientes, administración laboral completa y <strong>gestión del talento</strong>. <br />2019 - 2023 <br /> Synergie - Iman - Manpower</p>
                 </div>
                 <img src="img/experiencia-rrhh.png" alt="Imagen RRHH" />
             </li>
@@ -227,31 +229,31 @@
     <!--HABILIDADES-->
 
     <section id="habilidades">
-        <h2>🧠 Soft Skills</h2>
+        <h2 data-translate="soft_skills_title">🧠 Habilidades</h2>
         <div class="stack-grid">
             <div class="stack-item">
-                <h3>Asertividad</h3>
+                <h3 data-translate="soft_skills_assertiveness">Asertividad</h3>
                 <img src="img/asertividad.png" alt="Asertividad" />
             </div>
             <div class="stack-item">
-                <h3>Resiliencia</h3>
+                <h3 data-translate="soft_skills_resilience">Resiliencia</h3>
                 <img src="img/resiliencia.png" alt="Resiliencia" />
             </div>
             <div class="stack-item">
-                <h3>Proactividad</h3>
+                <h3 data-translate="soft_skills_proactivity">Proactividad</h3>
                 <img src="img/proactividad.png" alt="Proactividad" />
             </div>
             <div class="stack-item">
-                <h3>Creatividad</h3>
+                <h3 data-translate="soft_skills_creativity">Creatividad</h3>
                 <img src="img/creatividad.png" alt="Creatividad" />
             </div>
             <div class="stack-item">
-                <h3>Resolución de problemas</h3>
+                <h3 data-translate="soft_skills_problem_solving">Resolución de problemas</h3>
                 <img src="img/resolutivo.png" alt="Resolución de problemas" />
             </div>
             <div class="stack-item">
-                <h3>Habilidades Sociales</h3>
-                <img src="img/social.png" alt="Habilidades Sociales" />
+                <h3 data-translate="soft_skills_social">Habilidades sociales</h3>
+                <img src="img/social.png" alt="Habilidades sociales" />
             </div>
         </div>
     </section>
@@ -259,7 +261,7 @@
     <!--CONTACTO-->
 
     <section id="contacto">
-        <h2>💬 Contacto</h2>
+        <h2 data-translate="contact_title">💬 Contacto</h2>
         <div class="contacto-container">
             <div class="contacto-item">
                 <img src="img/phone.png" alt="Teléfono" />
@@ -287,6 +289,7 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="lang.js"></script>
 
 </body>
 </html>

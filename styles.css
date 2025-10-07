@@ -141,7 +141,7 @@ nav.active::before {
   opacity: 1;
 }
 
-/* Aseguramos que el menú quede encima del fondo */
+/* Asegura que el menú queda encima del fondo */
 nav ul {
   position: relative;
   z-index: 1000;
@@ -149,7 +149,7 @@ nav ul {
 
 #toggle-nav {
   position: relative; /* necesario para que z-index funcione */
-  z-index: 1001;      /* encima del fondo ::before y del menú */
+  z-index: 1001;      /* toogle encima del fondo */
 }
 
 /* NAVIGATION */
@@ -222,7 +222,10 @@ nav ul li a:hover {
   }
 
   nav ul {
-      flex-direction: column;
+      display: flex;           /* activa flex */
+      flex-direction: column;  /* apilar verticalmente */
+      align-items: center;     /* centrar los li horizontalmente */
+      width: 100%;             /* ocupa todo el ancho */
       overflow: hidden;
       max-height: 0;
       opacity: 0;
@@ -231,14 +234,21 @@ nav ul li a:hover {
   }
 
   nav ul.show {
-      max-height: 800px; /* altura suficiente para todos los enlaces */
+      max-height: 800px; /* altura para recoger visualmente los enlaces */
       opacity: 1;
       transform: translateY(0);
   }
 
   nav ul li {
       display: block;
-      margin: 12% 0;
+      margin: 25px 0;       /* espacio entre enlaces */
+      width: auto;          /* ancho automático */
+      text-align: center;   /* centra el texto dentro del li */
+  }
+
+  nav ul li a {
+      display: block;       /* hace que el enlace ocupe todo el ancho del li */
+      width: 100%;
   }
 }
 

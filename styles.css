@@ -170,11 +170,6 @@ nav ul {
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-#toggle-nav:hover {
-    background-color: #ffdd00;
-    transform: scale(1.1);
-}
-
 /* Estilo base del nav */
 nav {
     position: fixed;
@@ -219,6 +214,17 @@ nav ul li a:hover {
 @media (max-width: 768px) {
   #toggle-nav {
       display: inline-block;
+      /* Posición en la parte inferior y centrado */
+      position: fixed;
+      bottom: 30px;        /* distancia desde el borde inferior */
+      left: 50%;           /* punto medio horizontal */
+      transform: translateX(-50%); /* centra exactamente */
+      z-index: 1002;       /* encima del fondo oscuro */
+  }
+
+  #toggle-nav:hover {
+      background-color: #ffdd00;
+      transform: translateX(-50%) scale(1.1); /* mantener centrado al hacer hover */
   }
 
   nav ul {
@@ -241,7 +247,7 @@ nav ul li a:hover {
 
   nav ul li {
       display: block;
-      margin: 20px 0;       /* espacio entre enlaces */
+      margin: 25px 0;       /* espacio entre enlaces */
       width: auto;          /* ancho automático */
       text-align: center;   /* centra el texto dentro del li */
   }

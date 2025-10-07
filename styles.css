@@ -231,7 +231,7 @@ nav ul li a:hover {
   }
 
   nav ul.show {
-      max-height: 700px; /* altura suficiente para todos los enlaces */
+      max-height: 800px; /* altura suficiente para todos los enlaces */
       opacity: 1;
       transform: translateY(0);
   }

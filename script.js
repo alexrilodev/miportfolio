@@ -36,6 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Mostrar / ocultar menú en móviles con transición suave
   toggleBtn.addEventListener('click', () => {
     navList.classList.toggle('show');
+    nav.classList.toggle('active');
   });
 
   // Ocultar menú móvil suavemente al clicar un enlace
@@ -43,6 +44,8 @@ document.addEventListener('DOMContentLoaded', () => {
     link.addEventListener('click', () => {
       if (window.innerWidth <= 768) {
         navList.classList.remove('show');
+        nav.classList.remove('active');
+
       }
     });
   });

@@ -26,7 +26,7 @@
   "project_link": "🌐 Project Link",
   "project_video": "🎥 Demo Video",
   "project_portfolio_title": "Custom Portfolio",
-  "project_portfolio_description": "Development project of my personal portfolio website. Built with <strong>HTML, CSS, and JavaScript</strong> and fully <strong>responsive</strong>. Includes basic animations, adaptive navigation, external links, and file downloads.",
+  "project_portfolio_description": "Development project of my personal portfolio website. Built with <strong>HTML, CSS, and JavaScript</strong> and fully <strong>responsive</strong>. Includes basic animations, adaptive navigation, external links, file downloads, and Spanish / English translation.",
   "project_repository": "⚙️ Project Repository",
   "project_rock_paper_scissors_title": "Rock, Paper, Scissors Game",
   "project_rock_paper_scissors_description": "Interactive Rock, Paper, Scissors game built with <strong>HTML, CSS, and JavaScript</strong>. Includes invalid data detection, match history, and game reset functionality.",
@@ -39,6 +39,10 @@
   "education_psychology_description": "<strong>Bachelor’s Degree</strong> <br />2015 - 2019 <br /> Universitat Autònoma de Barcelona",
 
   "certification_title": "🥇 Certifications",
+  "certification_html_description": "Introduction to web development with HTML.",
+  "certification_css_description": "Introduction to web design with CSS.",
+  "certification_link": "🌐 Certification Link",
+
 
   "experience_title": "💼 Experience",
   "experience_web_developer": "Web Developer | ICT Trainer",

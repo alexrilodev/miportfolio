@@ -80,3 +80,42 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+// ==== CARRUSELES (Proyectos y Certificaciones) ====
+document.querySelectorAll('.carousel-container').forEach(container => {
+  const carousel = container.querySelector('.carousel');
+  const nextBtn = container.querySelector('.carousel-btn.next');
+  const prevBtn = container.querySelector('.carousel-btn.prev');
+
+  if (carousel && nextBtn && prevBtn) {
+    // Movimiento con botones
+    nextBtn.addEventListener('click', () => {
+      carousel.scrollBy({ left: 320, behavior: 'smooth' });
+    });
+
+    prevBtn.addEventListener('click', () => {
+      carousel.scrollBy({ left: -320, behavior: 'smooth' });
+    });
+
+    // Movimiento táctil / arrastre con ratón
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+
+    carousel.addEventListener('mousedown', (e) => {
+      isDown = true;
+      startX = e.pageX - carousel.offsetLeft;
+      scrollLeft = carousel.scrollLeft;
+    });
+
+    carousel.addEventListener('mouseleave', () => isDown = false);
+    carousel.addEventListener('mouseup', () => isDown = false);
+
+    carousel.addEventListener('mousemove', (e) => {
+      if(!isDown) return;
+      e.preventDefault();
+      const x = e.pageX - carousel.offsetLeft;
+      const walk = (x - startX) * 2;
+      carousel.scrollLeft = scrollLeft - walk;
+    });
+  }
+});

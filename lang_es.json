@@ -26,7 +26,7 @@
   "project_link": "🌐 Link proyecto",
   "project_video": "🎥 Vídeo Demo",
   "project_portfolio_title": "Portfolio personalizado",
-  "project_portfolio_description": "Proyecto de desarrollo web de mi portfolio actual. Desarrollado con <strong>HTML, CSS, JavaScript</strong> y con capacidad <strong>responsive</strong>. Dispone de animaciones básicas, navegación adaptada, hipervínculos externos y descarga de archivos adjuntos.",
+  "project_portfolio_description": "Proyecto de desarrollo web de mi portfolio actual. Desarrollado con <strong>HTML, CSS, JavaScript</strong> y con capacidad <strong>responsive</strong>. Dispone de animaciones básicas, navegación adaptada, hipervínculos externos, descarga de archivos adjuntos y traducción español / inglés.",
   "project_repository": "⚙️ Repositorio proyecto",
   "project_rock_paper_scissors_title": "Juego Piedra, Papel, Tijeras",
   "project_rock_paper_scissors_description": "Juego interactivo de Piedra, Papel, Tijeras desarrollado con <strong>HTML, CSS y JavaScript</strong>. Dispone de detección de datos no válidos, historial de partidas y reseteo de partidas.",
@@ -39,6 +39,10 @@
   "education_psychology_description": "<strong>Grado Universitario</strong> <br />2015 - 2019 <br /> Universitat Autònoma de Barcelona",
 
   "certification_title": "🥇 Certificaciones",
+  "certification_html_description": "Introducción al desarrollo web con HTML.",
+  "certification_css_description": "Introducción al diseño web con CSS.",
+  "certification_link": "🌐 Link certificación",
+
 
   "experience_title": "💼 Experiencia",
   "experience_web_developer": "Desarrollador Web | Formador TIC",

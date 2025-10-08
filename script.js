@@ -1,29 +1,3 @@
-/*Light box certificaciones*/
-
-document.addEventListener("DOMContentLoaded", function() {
-    const lightbox = document.getElementById("lightbox");
-    const imagenAmpliada = document.getElementById("imagen-ampliada");
-    const cerrar = document.querySelector(".cerrar");
-
-    document.querySelectorAll("#certificacion img").forEach(img => {
-        img.addEventListener("click", function() {
-            lightbox.style.display = "block";
-            imagenAmpliada.src = this.src;
-        });
-    });
-
-    cerrar.addEventListener("click", function() {
-        lightbox.style.display = "none";
-    });
-
-    lightbox.addEventListener("click", function(e) {
-        if (e.target === lightbox) {
-            lightbox.style.display = "none";
-        }
-    });
-});
-
-/* Animación navegación */
 
 /* Animación navegación */
 document.addEventListener('DOMContentLoaded', () => {
@@ -118,4 +92,17 @@ document.querySelectorAll('.carousel-container').forEach(container => {
       carousel.scrollLeft = scrollLeft - walk;
     });
   }
+});
+
+// === Expandir / contraer project-cards ===
+document.querySelectorAll('.project-card').forEach(card => {
+  card.addEventListener('click', function () {
+    // Contrae cualquier otra tarjeta expandida
+    document.querySelectorAll('.project-card.expanded').forEach(other => {
+      if (other !== card) other.classList.remove('expanded');
+    });
+
+    // Alterna el estado de la tarjeta clicada
+    this.classList.toggle('expanded');
+  });
 });

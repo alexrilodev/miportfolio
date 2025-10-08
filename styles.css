@@ -285,7 +285,7 @@ section {
 .stack-item img {
     max-width: 55%;
     height: auto;
-    filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.2));
+    filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.3));
 }
 
 .stack-item h3 {
@@ -321,7 +321,7 @@ section {
 #formacion ul li img {
     width: 95px;
     height: auto;
-    filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.2));
+    filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.3));
     margin-left: 20px;
 }
 
@@ -350,34 +350,8 @@ section {
 #experiencia ul li img {
     width: 95px;
     height: auto;
-    filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.2));
+    filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.3));
     margin-left: 20px;
-}
-
-/* HABILIDADES */
-#habilidades {
-    text-align: center;
-    padding: 20px;
-}
-
-.habilidades-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 20px;
-    justify-items: center;
-    align-items: center;
-}
-
-.habilidades-item img {
-    max-width: 55%;
-    height: auto;
-    filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.2));
-}
-
-.habilidades-item h3 {
-    margin-top: 10px;
-    font-size: 1.2em;
-    color: #333;
 }
 
 /* CONTACTO */
@@ -488,16 +462,16 @@ body, html {
 }
 
 /* ==== CARRUSEL DE PROYECTOS + CERTIFICACIONES ==== */
-.proyectoscert {
+.proyectoscerthabilidades {
   text-align: center;
   padding: 60px 20px;
 }
 
-#proyectoscert img {
+.proyectoscerthabilidades img {
     max-width: 100%;
     height: auto;
     border-radius: 5px;
-    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.2));
+    filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.3));
 }
 
 .carousel-container {
@@ -565,13 +539,6 @@ body, html {
 /* Quita el degradado al expandirse */
 .project-card.expanded::after {
     opacity: 0;
-}
-
-
-.project-card img {
-  width: 100%;
-  border-radius: 10px;
-  margin-bottom: 10px;
 }
 
 .carousel-btn {

@@ -22,14 +22,14 @@
   "stack_title": "💻 Stack Tecnológico",
 
   "projects_title": "📊 Proyectos",
-  "project_orientait_description": "Plataforma web que busca cubrir necesidades de <strong>empresas</strong> y <strong>candidatos</strong> del <strong>sector IT</strong>. Desarrollo Full Stack: <strong>HTML - CSS</strong> (maquetación - diseño) / <strong>JavaScript</strong> (front-end) / <strong>PHP</strong> (back-end) / <strong>Bootstrap</strong> (framework) / <strong>MySQL</strong> (bbdd) / <strong>InfinityFree</strong> (hosting gratuito). Dispone de capacidad responsive, formularios de validación registro/login, funcionalidad según rol usuario (candidato / empresa / admin), publicación y gestión de ofertas, inscripciones a ofertas, filtros de búsqueda, subida de CV y material de orientación laboral, así como solicitud de citas calendarizadas con el admin.",
+  "project_orientait_description": "Plataforma web que busca cubrir necesidades de <strong>empresas</strong> y <strong>candidatos</strong> del <strong>sector IT</strong>. Desarrollo Full Stack: <strong>HTML - CSS</strong> (maquetación - diseño) / <strong>JavaScript</strong> (front-end) / <strong>PHP</strong> (back-end) / <strong>Bootstrap</strong> (framework) / <strong>MySQL</strong> (bbdd) / <strong>InfinityFree</strong> (hosting gratuito).<br><br> Dispone de capacidad responsive, formularios de validación registro/login, funcionalidad según rol usuario (candidato / empresa / admin), publicación y gestión de ofertas, inscripciones a ofertas, filtros de búsqueda, subida de CV y material de orientación laboral, así como solicitud de citas calendarizadas con el admin.",
   "project_link": "🌐 Link proyecto",
   "project_video": "🎥 Vídeo Demo",
   "project_portfolio_title": "Portfolio personalizado",
-  "project_portfolio_description": "Proyecto de desarrollo web de mi portfolio actual. Desarrollado con <strong>HTML, CSS, JavaScript</strong> y con capacidad <strong>responsive</strong>. Dispone de animaciones básicas, navegación adaptada, hipervínculos externos, descarga de archivos adjuntos y traducción español / inglés.",
+  "project_portfolio_description": "Proyecto de desarrollo web de mi portfolio actual. Desarrollado con <strong>HTML, CSS, JavaScript</strong> y con capacidad <strong>responsive</strong>.<br><br> Dispone de animaciones básicas, navegación adaptada, hipervínculos externos, descarga de archivos adjuntos y traducción español / inglés.",
   "project_repository": "⚙️ Repositorio proyecto",
   "project_rock_paper_scissors_title": "Juego Piedra, Papel, Tijeras",
-  "project_rock_paper_scissors_description": "Juego interactivo de Piedra, Papel, Tijeras desarrollado con <strong>HTML, CSS y JavaScript</strong>. Dispone de detección de datos no válidos, historial de partidas y reseteo de partidas.",
+  "project_rock_paper_scissors_description": "Juego interactivo de Piedra, Papel, Tijeras desarrollado con <strong>HTML, CSS y JavaScript</strong>.<br><br> Dispone de detección de datos no válidos, historial de partidas y reseteo de partidas.",
 
   "education_title": "🎓 Formación",
   "education_web_development": "Desarrollo de Aplicaciones Web",

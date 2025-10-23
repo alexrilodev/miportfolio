@@ -29,10 +29,20 @@ const setLanguage = async (lang) => {
     document.querySelectorAll('[data-translate]').forEach(element => {
         const key = element.getAttribute('data-translate');
         const translation = translations[key];
-        
+
         if (translation) {
-            // Usa innerHTML para poder manejar etiquetas como <span>, <strong> y <br />
-            element.innerHTML = translation; 
+            // Si es un input o botón con atributo "value", actualizar ese valor
+            if (element.tagName === 'INPUT' && element.type === 'submit') {
+                element.value = translation;
+            } 
+            // Si tiene placeholder
+            else if (element.hasAttribute('placeholder')) {
+                element.setAttribute('placeholder', translation);
+            } 
+            // Para el resto, usa innerHTML
+            else {
+                element.innerHTML = translation;
+            }
         }
     });
 

@@ -66,5 +66,11 @@
   "form_name": "Nombre",
   "form_email": "Correo electrónico",
   "form_message": "Motivo del contacto (trabajo, formación, proyectos, etc.)",
-  "form_submit": "Enviar"
+  "form_submit": "Enviar",
+
+"form_sending": "Enviando...",
+"form_success": "✅ ¡Mensaje enviado! Contestaré tu consulta lo antes posible.",
+"form_error": "❌ Lo sentimos, ocurrió un error. Por favor, inténtalo de nuevo más tarde.",
+"form_submit": "Enviar"
+
 }

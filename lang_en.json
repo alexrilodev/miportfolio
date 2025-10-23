@@ -66,5 +66,11 @@
   "form_name": "Name",
   "form_email": "Email",
   "form_message": "Reason for contact (work, education, projects, etc.)",
-  "form_submit": "Send"
+  "form_submit": "Send",
+
+"form_sending": "Sending...",
+"form_success": "✅ Message sent! I’ll get back to you as soon as possible.",
+"form_error": "❌ Sorry, something went wrong. Please try again later.",
+"form_submit": "Send"
+
 }

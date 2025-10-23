@@ -157,7 +157,7 @@ if (form) {
                 </p>
             `;
         } finally {
-            submitButton.value = translations["form_submit"];
+            submitButton.value = translations["form_submit_js"];
             submitButton.disabled = false;
         }
     });

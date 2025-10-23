@@ -60,5 +60,11 @@
   "soft_skills_problem_solving": "Problem Solving",
   "soft_skills_social": "Social skills",
 
-  "contact_title": "💬 Contact"
+  "contact_title": "💬 Contact",
+
+  "form_title": "📝 You can contact me through the form:",
+  "form_name": "Name",
+  "form_email": "Email",
+  "form_message": "Reason for contact (work, education, projects, etc.)",
+  "form_submit": "Send"
 }

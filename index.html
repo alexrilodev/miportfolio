@@ -310,6 +310,25 @@
                 <img src="img/github.png" alt="GitHub" />
                 <a href="https://github.com/alexrilodev" target="_blank"><strong>alexrilodev</strong></a>
             </div>
+           
+            <form id="formContacto" method="POST">
+
+                <h4 data-translate="form_title">📝 Puedes contactar conmigo a través del formulario:</h4>
+
+                <label data-translate="form_name" style="font-style: italic;" for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <br>
+                <label data-translate="form_email" style="font-style: italic;" for="email">Correo electrónico</label>
+                <input type="email" id="email" name="_replyto" required>
+                <br>
+                <label data-translate="form_message" style="font-style: italic;" for="mensaje">Motivo del contacto (trabajo, formación, proyectos, etc.)</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                <br>
+                <input data-translate="form_submit" type="submit" value="Enviar">
+            
+                <div id="statusMessage" style="margin-top: 15px;"></div>
+            </form>
+
         </div>
     </section>
 

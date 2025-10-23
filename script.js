@@ -106,3 +106,66 @@ document.querySelectorAll('.project-card').forEach(card => {
     this.classList.toggle('expanded');
   });
 });
+
+// ==== MANEJO DEL FORMULARIO CON ASYNC/AWAIT (FETCH API) ====
+
+const FORMSPREE_URL = "https://formspree.io/f/mdkwrlyw"; 
+
+const form = document.getElementById('formContacto');
+const statusMessage = document.getElementById('statusMessage');
+
+if (form) {
+    form.addEventListener('submit', async (e) => {
+        e.preventDefault(); // Detiene el envío predeterminado (la redirección)
+
+        // Deshabilita el botón y muestra "Enviando..."
+        const submitButton = form.querySelector('input[type="submit"]');
+        submitButton.value = 'Enviando...';
+        submitButton.disabled = true;
+        statusMessage.innerHTML = ''; // Limpia mensajes anteriores
+
+        // Crea un objeto con los datos del formulario
+        const formData = new FormData(form);
+
+        try {
+            // Envía los datos a Formspree usando Fetch API
+            const response = await fetch(FORMSPREE_URL, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+
+            if (response.ok) {
+                // 📧 Envío Exitoso: Muestra el mensaje de confirmación bonito
+                statusMessage.innerHTML = `
+                    <p style="color: #4CAF50; font-weight: bold; background-color: #e8f5e9; padding: 10px; border-radius: 8px;">
+                        ✅ ¡Mensaje enviado! Contestaré tu consulta lo antes posible.
+                    </p>
+                `;
+                form.reset(); // Limpia los campos del formulario
+            } else {
+                // ❌ Fallo en el envío (ej. error de servidor de Formspree)
+                const data = await response.json();
+                if (Object.hasOwn(data, 'errors')) {
+                    throw new Error(data["errors"].map(error => error["message"]).join(", "));
+                } else {
+                    throw new Error('Hubo un problema al enviar el formulario.');
+                }
+            }
+        } catch (error) {
+            // 🚨 Error de conexión o cualquier otro error
+            console.error('Error de envío:', error);
+            statusMessage.innerHTML = `
+                <p style="color: #D32F2F; font-weight: bold; background-color: #ffcdd2; padding: 10px; border-radius: 8px;">
+                    ❌ Lo sentimos, ocurrió un error. Por favor, inténtalo de nuevo más tarde.
+                </p>
+            `;
+        } finally {
+            // Habilita el botón de nuevo y restablece el texto
+            submitButton.value = 'Enviar';
+            submitButton.disabled = false;
+        }
+    });
+}

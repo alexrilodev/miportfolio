@@ -62,14 +62,14 @@
 
   "contact_title": "💬 Contacto",
 
-  "form_title": "📝 Puedes contactarme a través del formulario:",
+  "form_title": "📝 Puedes contactarme a través del formulario y te responderé lo antes posible:",
   "form_name": "Nombre",
   "form_email": "Correo electrónico",
   "form_message": "Motivo del contacto (trabajo, formación, proyectos, etc.)",
   "form_submit": "Enviar",
 
   "form_sending": "Enviando...",
-  "form_success": "✅ ¡Mensaje enviado! Contestaré tu consulta lo antes posible.",
+  "form_success": "✅ ¡Mensaje enviado! Responderé tu consulta lo antes posible.",
   "form_error": "❌ Lo sentimos, ocurrió un error. Por favor, inténtalo de nuevo más tarde.",
   "form_submit_js": "Enviar"
 

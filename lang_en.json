@@ -62,14 +62,14 @@
 
   "contact_title": "💬 Contact",
 
-  "form_title": "📝 You can contact me through the form:",
+  "form_title": "📝 You can contact me through the form and I’ll get back to you as soon as possible:",
   "form_name": "Name",
   "form_email": "Email",
   "form_message": "Reason for contact (work, education, projects, etc.)",
   "form_submit": "Send",
 
   "form_sending": "Sending...",
-  "form_success": "✅ Message sent! I’ll get back to you as soon as possible.",
+  "form_success": "✅ Message sent! I’ll respond to your inquiry as soon as possible.",
   "form_error": "❌ Sorry, something went wrong. Please try again later.",
   "form_submit_js": "Send"
 

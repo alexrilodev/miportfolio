@@ -70,7 +70,7 @@
 
   "form_sending": "Enviando...",
   "form_success": "✅ ¡Mensaje enviado! Responderé tu consulta lo antes posible.",
-  "form_error": "❌ Lo sentimos, ocurrió un error. Por favor, inténtalo de nuevo más tarde.",
+  "form_error": "❌ Lo siento, ocurrió un error. Por favor, inténtalo de nuevo más tarde.",
   "form_submit_js": "Enviar"
 
 }

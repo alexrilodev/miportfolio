@@ -34,9 +34,9 @@
   "education_title": "🎓 Education",
   "education_web_development": "Web Application Development",
   "education_hr_management": "Human Resources Management",
-  "education_hr_management_description": "<strong>Master’s Degree</strong> <br />2019 - 2021 <br /> Universitat Oberta de Catalunya",
+  "education_hr_management_description": "<strong>Master's Degree</strong> <br />2019 - 2021 <br /> Universitat Oberta de Catalunya",
   "education_psychology": "Psychology",
-  "education_psychology_description": "<strong>Bachelor’s Degree</strong> <br />2015 - 2019 <br /> Universitat Autònoma de Barcelona",
+  "education_psychology_description": "<strong>Bachelor's Degree</strong> <br />2015 - 2019 <br /> Universitat Autònoma de Barcelona",
 
   "certification_title": "🥇 Certifications",
   "certification_html_description": "Introduction to web development with HTML.",
@@ -62,15 +62,15 @@
 
   "contact_title": "💬 Contact",
 
-  "form_title": "📝 You can contact me through the form and I’ll get back to you as soon as possible:",
+  "form_title": "📝 You can contact me through the form and I'll get back to you as soon as possible:",
   "form_name": "Name",
   "form_email": "Email",
   "form_message": "Reason for contact (work, education, projects, etc.)",
   "form_submit": "Send",
 
   "form_sending": "Sending...",
-  "form_success": "✅ Message sent! I’ll respond to your inquiry as soon as possible.",
-  "form_error": "❌ Sorry, something went wrong. Please try again later.",
+  "form_success": "✅ Message sent! I'll respond to your inquiry as soon as possible.",
+  "form_error": "❌ I'm sorry, something went wrong. Please try again later.",
   "form_submit_js": "Send"
 
 }

@@ -13,13 +13,23 @@ document.addEventListener('DOMContentLoaded', () => {
     nav.classList.toggle('active');
   });
 
-  // Ocultar menú móvil suavemente al clicar un enlace
+  // 🔥 NUEVO: Interceptar navegación para no modificar el hash
   navLinks.forEach(link => {
-    link.addEventListener('click', () => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault(); // evita cambiar el hash (#seccion)
+
+      const targetId = this.getAttribute('href').substring(1);
+      const target = document.getElementById(targetId);
+
+      // Scroll suave hacia la sección
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth' });
+      }
+
+      // Cerrar menú móvil
       if (window.innerWidth <= 768) {
         navList.classList.remove('show');
         nav.classList.remove('active');
-
       }
     });
   });
@@ -53,6 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+
 
 // ==== CARRUSELES (Proyectos y Certificaciones) ====
 document.querySelectorAll('.carousel-container').forEach(container => {

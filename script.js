@@ -1,5 +1,5 @@
 
-/* Animación navegación */
+// ==== ANIMACIÓN NAVEGACIÓN ====
 document.addEventListener('DOMContentLoaded', () => {
   const nav = document.querySelector('nav');
   const toggleBtn = document.getElementById('toggle-nav');
@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     nav.classList.toggle('active');
   });
 
-  // 🔥 NUEVO: Interceptar navegación para no modificar el hash
+  // Interceptar navegación para no modificar el hash
   navLinks.forEach(link => {
     link.addEventListener('click', function(e) {
       e.preventDefault(); // evita cambiar el hash (#seccion)

@@ -18,7 +18,7 @@
   "download_cv_es": "CV - Spanish",
   "download_cv_en": "CV - English",
 
-  "stack_title": "💻 Tech Stack",
+  "stack_title": "💻 Technical Skills",
 
   "projects_title": "📊 Projects",
   "project_momitos_description": "Web platform designed to showcase and manage the handmade products of <strong>Momitos Handmade</strong>, a handcrafted textile creation project. Full Stack Development: <strong>HTML - CSS</strong> (layout and visual design) / <strong>JavaScript</strong> (front-end interactivity and animations) / <strong>PHP</strong> (back-end dynamic product management) / <strong>MySQL</strong> (database) / <strong>InfinityFree</strong> (free hosting).<br><br> Includes a product catalog organized by categories, individual dynamic carousels, a modal with an image gallery, an automatic design availability counter, and external purchase links. It also allows product management through an admin role from the database and offers a functional form to request custom orders, as well as direct access to social media.",

@@ -18,7 +18,7 @@
   "download_cv_es": "CV - Español",
   "download_cv_en": "CV - Inglés",
 
-  "stack_title": "💻 Stack Tecnológico",
+  "stack_title": "💻 Conocimientos Técnicos",
 
   "projects_title": "📊 Proyectos",
   "project_momitos_description": "Plataforma web diseñada para exhibir y gestionar los productos artesanales de <strong>Momitos Handmade</strong>, un proyecto de creación textil hecho a mano. Desarrollo Full Stack: <strong>HTML - CSS</strong> (maquetación y diseño visual) / <strong>JavaScript</strong> (interactividad y animaciones front-end) / <strong>PHP</strong> (gestión dinámica de productos back-end) / <strong>MySQL</strong> (base de datos) / <strong>InfinityFree</strong> (hosting gratuito).<br><br> Incluye catálogo de productos organizado por categorías, carruseles dinámicos individuales, modal con galería de imágenes, contador automático de diseños disponibles y enlaces a compra externa. También permite gestionar productos mediante un rol de admin desde base de datos y ofrece un formulario funcional para solicitar encargos personalizados, además de acceso directo a redes sociales.",

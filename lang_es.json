@@ -2,7 +2,7 @@
   "page_title": "Portfolio - Álex Ricart López",
 
   "nav_about": "Sobre mí",
-  "nav_tech_stack": "Stack Tecnológico",
+  "nav_tech_stack": "Conocimientos Técnicos",
   "nav_projects": "Proyectos",
   "nav_education": "Formación",
   "nav_certifications": "Certificaciones",
@@ -10,12 +10,11 @@
   "nav_soft_skills": "Habilidades",
   "nav_contact": "Contacto",
 
-  "hero_title_1": "Soy <span class='resaltar'>Desarrollador Web Full Stack</span>, con una trayectoria que combina <span class='resaltar'>tecnología, formación y recursos humanos</span>. Mi experiencia profesional incluye:",
-  "experience_1": "4 años en la gestión del talento para clientes de diversos sectores profesionales.",
-  "experience_2": "2 años en la orientación y la formación de profesionales del ámbito tecnológico.",
+  "hero_title_1": "Soy un profesional de <span class='resaltar'>Recursos Humanos</span> con una trayectoria de más de <span class='resaltar'>seis años</span> especializado en la <span class='resaltar'>Gestión del Talento</span> en el <span class='resaltar'>Sector Tecnológico</span>. Mi background profesional combina:",
+  "experience_1": "<span class='resaltar'>RRHH y Talento:</span> Sólida trayectoria en Selección, Formación, y Orientación Profesional de perfiles IT.",
+  "experience_2": "<span class='resaltar'>Conocimientos Técnicos IT:</span> Cuento con formación en Desarrollo de Aplicaciones Web, lo que me permite comprender las necesidades reales del sector IT.",
+  "experience_3": "<span class='resaltar'>Formación y Desarrollo:</span> Experiencia en el diseño de programas formativos, detectar brechas de conocimiento y aportar soluciones que impulsan el crecimiento y la productividad de los equipos.",
   "hero_title_2": "Este enfoque integral me permite aportar una <span class='resaltar'>visión estratégica</span> en cualquier proyecto que lleve a cabo.",
-  "hero_title_3": "Actualmente, me centro en el <span class='resaltar'>desarrollo web</span> y la <span class='resaltar'>formación TIC</span>, colaborando en iniciativas que promueven innovación, aprendizaje y crecimiento profesional.",
-  "hero_title_4": "Me considero una persona <span class='resaltar'>curiosa, creativa y comprometida</span> con la mejora continua en cada proyecto que asumo.",
   "download_cv_es": "CV - Español",
   "download_cv_en": "CV - Inglés",
 
@@ -48,11 +47,11 @@
 
   "experience_title": "💼 Experiencia",
   "experience_web_developer": "Desarrollador Web | Formador TIC",
-  "experience_web_developer_description": "Programación <strong>Full Stack</strong> de proyectos personales y profesionales. Colaboración con entidades en <strong>formaciones TIC</strong>. <br />Actualidad <br /> Profesional Independiente",
-  "experience_project_coordinator": "Coordinador de Proyectos Pedagógicos - TIC",
+  "experience_web_developer_description": "Programación <strong>Full Stack</strong> de proyectos personales y profesionales. Colaboración con entidades en <strong>formaciones TIC</strong>. <br />Actualidad <br /> Independiente (actividad complementaria)",
+  "experience_project_coordinator": "Coordinador de Proyectos de Formación TIC",
   "experience_project_coordinator_description": "Gestión y coordinación de <strong>proyectos formativos</strong> en alfabetización digital, competencias básicas TIC y/o programación web técnica. <strong>Orientación y prospección laboral</strong>. <br />2023 - Actualidad <br /> Fundación Esplai",
-  "experience_hr_technician": "Técnico de RRHH",
-  "experience_hr_technician_description": "Selección de personal para diversos sectores profesionales y clientes, administración laboral completa y <strong>gestión del talento</strong>. <br />2019 - 2023 <br /> Synergie - Iman - Manpower",
+  "experience_hr_technician": "Técnico de RRHH | Talent Acquisition Specialist",
+  "experience_hr_technician_description": "Selección de personal para diversos sectores profesionales y clientes, con especial énfasis en el <strong>sector IT</strong> y roles profesionales técnicos. Administración laboral completa y <strong>gestión del talento</strong>. <br />2019 - 2023 <br /> Synergie - Iman - Manpower",
 
   "soft_skills_title": "🧠 Habilidades",
   "soft_skills_assertiveness": "Asertividad",
@@ -67,7 +66,7 @@
   "form_title": "📝 Puedes contactarme a través del formulario y te responderé lo antes posible:",
   "form_name": "Nombre",
   "form_email": "Correo electrónico",
-  "form_message": "Motivo del contacto (trabajo, formación, proyectos, etc.)",
+  "form_message": "Motivo del contacto",
   "form_submit": "Enviar",
 
   "form_sending": "Enviando...",

@@ -2,7 +2,7 @@
   "page_title": "Portfolio - Álex Ricart López",
 
   "nav_about": "About Me",
-  "nav_tech_stack": "Tech Stack",
+  "nav_tech_stack": "Technical Skills",
   "nav_projects": "Projects",
   "nav_education": "Education",
   "nav_certifications": "Certifications",
@@ -10,12 +10,11 @@
   "nav_soft_skills": "Soft Skills",
   "nav_contact": "Contact",
 
-  "hero_title_1": "I am a <span class='resaltar'>Full Stack Web Developer</span> with a background that combines <span class='resaltar'>technology, training, and human resources</span>. My professional experience includes:",
-  "experience_1": "4 years in talent management for clients across various professional sectors.",
-  "experience_2": "2 years providing guidance and training for professionals in the tech field.",
+  "hero_title_1": "I am a <span class='resaltar'>Human Resources</span> professional with over <span class='resaltar'>six years</span> of experience specializing in <span class='resaltar'>Talent Management</span> in the <span class='resaltar'>Technology Sector</span>. My professional background combines:",
+  "experience_1": "<span class='resaltar'>HR and Talent:</span> Solid experience in Selection, Training, and Career Guidance of IT profiles.",
+  "experience_2": "<span class='resaltar'>IT Technical Knowledge:</span> I have training in Web Application Development, which allows me to understand the real needs of the IT sector.",
+  "experience_3": "<span class='resaltar'>Training and Development:</span> Experience in designing training programs, identifying knowledge gaps, and providing solutions that drive team growth and productivity.",
   "hero_title_2": "This comprehensive approach allows me to bring a <span class='resaltar'>strategic vision</span> to every project I undertake.",
-  "hero_title_3": "Currently, I focus on <span class='resaltar'>web development</span> and <span class='resaltar'>ICT training</span>, collaborating on initiatives that promote innovation, learning, and professional growth.",
-  "hero_title_4": "I consider myself a <span class='resaltar'>curious, creative, and committed</span> person, always striving for continuous improvement in every project I take on.",
   "download_cv_es": "CV - Spanish",
   "download_cv_en": "CV - English",
 
@@ -48,11 +47,11 @@
 
   "experience_title": "💼 Experience",
   "experience_web_developer": "Web Developer | ICT Trainer",
-  "experience_web_developer_description": "Full Stack programming of personal and professional projects. Collaboration with organizations in <strong>ICT training</strong>. <br />Present <br /> Independent Professional",
-  "experience_project_coordinator": "Pedagogical Project Coordinator - ICT",
+  "experience_web_developer_description": "<strong>Full Stack</strong> programming of personal and professional projects. Collaboration with organizations in <strong>ICT training</strong>. <br />Present <br /> Freelance (side activity)",
+  "experience_project_coordinator": "Training Project Coordinator ICT",
   "experience_project_coordinator_description": "Management and coordination of <strong>training projects</strong> in digital literacy, basic ICT skills, and/or technical web programming. <strong>Career guidance and labor market outreach</strong>. <br />2023 - Present <br /> Fundación Esplai",
-  "experience_hr_technician": "HR Technician",
-  "experience_hr_technician_description": "Personnel selection for different professional sectors and clients, full labor administration, and <strong>talent management</strong>. <br />2019 - 2023 <br /> Synergie - Iman - Manpower",
+  "experience_hr_technician": "HR Technician | Talent Acquisition Specialist",
+  "experience_hr_technician_description": "Personnel selection for different professional sectors and clients, with special emphasis on the <strong>IT sector</strong> and technical professional roles. Full labor administration, and <strong>talent management</strong>. <br />2019 - 2023 <br /> Synergie - Iman - Manpower",
 
   "soft_skills_title": "🧠 Soft Skills",
   "soft_skills_assertiveness": "Assertiveness",
@@ -67,7 +66,7 @@
   "form_title": "📝 You can contact me through the form and I'll get back to you as soon as possible:",
   "form_name": "Name",
   "form_email": "Email",
-  "form_message": "Reason for contact (work, education, projects, etc.)",
+  "form_message": "Reason for contact",
   "form_submit": "Send",
 
   "form_sending": "Sending...",

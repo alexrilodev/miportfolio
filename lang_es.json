@@ -10,7 +10,7 @@
   "nav_soft_skills": "Habilidades",
   "nav_contact": "Contacto",
 
-  "hero_title_1": "Soy un profesional de <span class='resaltar'>Recursos Humanos</span> con una trayectoria de más de <span class='resaltar'>seis años</span> especializado en la <span class='resaltar'>Gestión del Talento</span> en el <span class='resaltar'>Sector Tecnológico</span>. Mi background profesional combina:",
+  "hero_title_1": "Soy un profesional con experiencia en <span class='resaltar'>entornos IT</span> y formación en <span class='resaltar'>Desarrollo de Aplicaciones Web</span>, con trayectoria previa en <span class='resaltar'>Recursos Humanos</span> y <span class='resaltar'>Psicología</span>. Mi background profesional combina:",
   "experience_1": "<span class='resaltar'>RRHH y Talento:</span> Sólida trayectoria en Selección, Formación, y Orientación Profesional de perfiles IT.",
   "experience_2": "<span class='resaltar'>Conocimientos Técnicos IT:</span> Cuento con formación en Desarrollo de Aplicaciones Web, lo que me permite comprender las necesidades reales del sector IT.",
   "experience_3": "<span class='resaltar'>Formación y Desarrollo:</span> Experiencia en el diseño de programas formativos, detectar brechas de conocimiento y aportar soluciones que impulsan el crecimiento y la productividad de los equipos.",
@@ -46,9 +46,9 @@
 
 
   "experience_title": "💼 Experiencia",
-  "experience_web_developer": "Desarrollador Web | Formador TIC",
-  "experience_web_developer_description": "Programación <strong>Full Stack</strong> de proyectos personales y profesionales. Colaboración con entidades en <strong>formaciones TIC</strong>. <br />Actualidad <br /> Independiente (actividad complementaria)",
-  "experience_project_coordinator": "Coordinador de Proyectos de Formación TIC",
+  "experience_web_developer": "Desarrollador Web | Formador IT",
+  "experience_web_developer_description": "Programación <strong>Full Stack</strong> de proyectos personales y profesionales. Colaboración con entidades en <strong>formaciones TIC</strong>. <br />2025 - Actualidad <br /> Fundación Esplai",
+  "experience_project_coordinator": "Coordinador de Proyectos de Formación IT",
   "experience_project_coordinator_description": "Gestión y coordinación de <strong>proyectos formativos</strong> en alfabetización digital, competencias básicas TIC y/o programación web técnica. <strong>Orientación y prospección laboral</strong>. <br />2023 - Actualidad <br /> Fundación Esplai",
   "experience_hr_technician": "Técnico de RRHH | Talent Acquisition Specialist",
   "experience_hr_technician_description": "Selección de personal para diversos sectores profesionales y clientes, con especial énfasis en el <strong>sector IT</strong> y roles profesionales técnicos. Administración laboral completa y <strong>gestión del talento</strong>. <br />2019 - 2023 <br /> Synergie - Iman - Manpower",

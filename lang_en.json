@@ -10,7 +10,7 @@
   "nav_soft_skills": "Soft Skills",
   "nav_contact": "Contact",
 
-  "hero_title_1": "I am a <span class='resaltar'>Human Resources</span> professional with over <span class='resaltar'>six years</span> of experience specializing in <span class='resaltar'>Talent Management</span> in the <span class='resaltar'>Technology Sector</span>. My professional background combines:",
+  "hero_title_1": "I am a professional with experience in <span class='resaltar'>IT environments</span> and training in <span class='resaltar'>Web Application Development</span>, with a previous background in <span class='resaltar'>Human Resources</span> and <span class='resaltar'>Psychology</span>. My professional background combines:",
   "experience_1": "<span class='resaltar'>HR and Talent:</span> Solid experience in Selection, Training, and Career Guidance of IT profiles.",
   "experience_2": "<span class='resaltar'>IT Technical Knowledge:</span> I have training in Web Application Development, which allows me to understand the real needs of the IT sector.",
   "experience_3": "<span class='resaltar'>Training and Development:</span> Experience in designing training programs, identifying knowledge gaps, and providing solutions that drive team growth and productivity.",
@@ -46,9 +46,9 @@
 
 
   "experience_title": "💼 Experience",
-  "experience_web_developer": "Web Developer | ICT Trainer",
-  "experience_web_developer_description": "<strong>Full Stack</strong> programming of personal and professional projects. Collaboration with organizations in <strong>ICT training</strong>. <br />Present <br /> Freelance (side activity)",
-  "experience_project_coordinator": "Training Project Coordinator ICT",
+  "experience_web_developer": "Web Developer | IT Trainer",
+  "experience_web_developer_description": "<strong>Full Stack</strong> programming of personal and professional projects. Collaboration with organizations in <strong>ICT training</strong>. <br />2025 - Present <br /> Fundación Esplai",
+  "experience_project_coordinator": "Training Project Coordinator IT",
   "experience_project_coordinator_description": "Management and coordination of <strong>training projects</strong> in digital literacy, basic ICT skills, and/or technical web programming. <strong>Career guidance and labor market outreach</strong>. <br />2023 - Present <br /> Fundación Esplai",
   "experience_hr_technician": "HR Technician | Talent Acquisition Specialist",
   "experience_hr_technician_description": "Personnel selection for different professional sectors and clients, with special emphasis on the <strong>IT sector</strong> and technical professional roles. Full labor administration, and <strong>talent management</strong>. <br />2019 - 2023 <br /> Synergie - Iman - Manpower",

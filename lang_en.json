@@ -10,7 +10,7 @@
   "nav_soft_skills": "Soft Skills",
   "nav_contact": "Contact",
 
-  "hero_title_1": "I am a professional with experience in <span class='resaltar'>Application Development</span> and <span class='resaltar'>Cloud Services</span>. I have a previous background in <span class='resaltar'>Human Resources</span> and <span class='resaltar'>Psychology</span>. My professional background combines:",
+  "hero_title_1": "I am a professional with experience in <span class='resaltar'>Application Development</span> and <span class='resaltar'>Cloud services</span>. I have a previous background in <span class='resaltar'>Human Resources</span> and <span class='resaltar'>Psychology</span>. My professional background combines:",
   "experience_1": "<span class='resaltar'>HR:</span> Solid experience in Selection, Training, and Talent Management of IT profiles.",
   "experience_2": "<span class='resaltar'>Full Stack Development:</span> Training and experience in Web Application Development, highlighting my skills in HTML, CSS, JavaScript, Java, C#, PHP, SQL, Node.js, Angular, VS Code, WordPress.",
   "experience_3": "<span class='resaltar'>IT Technical Consulting:</span> Experience in consulting, process digitization, and MS365 / Cloud solutions.",
@@ -48,7 +48,7 @@
 
   "experience_title": "💼 Experience",
   "experience_web_developer": "Application & Cloud Developer",
-  "experience_web_developer_description": "<strong>Full Stack</strong> programming of custom applications, <strong>CMS</strong> configuration, <strong>Microsoft 365</strong> workspace architecture, cloud services <strong>(Azure/M365)</strong>, and <strong>technical consulting</strong> for the Third Sector. <br />2026 - Present <br /> Fundación Esplai",
+  "experience_web_developer_description": "<strong>Full Stack</strong> programming of custom applications, <strong>CMS</strong> configuration, <strong>Microsoft 365</strong> workspace architecture, Cloud services <strong>(Azure/M365)</strong>, and <strong>technical consulting</strong> for the Third Sector. <br />2026 - Present <br /> Fundación Esplai",
   "experience_project_coordinator": "Training Project Coordinator IT",
   "experience_project_coordinator_description": "Management and coordination of <strong>training projects</strong> in digital literacy, basic ICT skills, and/or technical web programming. <strong>Career guidance, labor market outreach, and instructional collaboration in IT training initiatives</strong>. <br />2023 - 2026 <br /> Fundación Esplai",
   "experience_hr_technician": "HR Technician | Talent Acquisition Specialist",

@@ -285,6 +285,10 @@ section {
   box-shadow: var(--shadow-sm);
 }
 
+section > h2 {
+  margin-bottom: 15px;
+}
+
 /* EXPERIENCIA Y FORMACIÓN */
 #formacion,
 #experiencia {

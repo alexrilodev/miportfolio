@@ -307,7 +307,7 @@ section {
 }
 
 #experiencia ul li {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 #formacion ul li div,
@@ -339,6 +339,11 @@ section {
   height: auto;
   flex-shrink: 0;
   filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.3));
+}
+
+#experiencia .exp-meta {
+  display: block;
+  margin-bottom: 14px;
 }
 
 #formacion ul li img {

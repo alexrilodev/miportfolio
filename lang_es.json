@@ -42,9 +42,9 @@
   "education_app_development": "Desarrollo de Aplicaciones Híbridas con Android, iOS y Progressive Web Apps (PWA)",
   "education_web_development": "Desarrollo de Aplicaciones Web",
   "education_hr_management": "Dirección y Gestión de RRHH",
-  "education_hr_management_description": "<strong>Máster Universitario</strong> <br />2019 - 2021 <br /> UOC",
+  "education_hr_management_description": "<strong>Máster Universitario</strong> <br />2019 - 2021 | UOC",
   "education_psychology": "Psicología",
-  "education_psychology_description": "<strong>Grado Universitario</strong> <br />2015 - 2019 <br /> UAB",
+  "education_psychology_description": "<strong>Grado Universitario</strong> <br />2015 - 2019 | UAB",
 
   "certification_title": "🥇 Certificaciones",
   "certification_aiskills_description": "Inteligencia Artificial en ecosistema Microsoft.",
@@ -55,11 +55,11 @@
 
   "experience_title": "💼 Experiencia",
   "experience_web_developer": "Desarrollador de Aplicaciones y Cloud",
-  "experience_web_developer_description": "Programación <strong>Full Stack</strong> de aplicaciones a medida, configuración de <strong>CMS</strong>, arquitectura de entornos de trabajo <strong>Microsoft 365</strong>, servicios Cloud <strong>(Azure/M365)</strong> y <strong>consultoría técnica</strong> para el Tercer Sector. <br />2026 - Actualidad <br /> Fundación Esplai",
+  "experience_web_developer_description": "<span class='exp-meta'><strong>2026 - Actualidad</strong> | Fundación Esplai</span> Programación <strong>Full Stack</strong> de aplicaciones a medida, configuración de <strong>CMS</strong>, arquitectura de entornos de trabajo <strong>Microsoft 365</strong>, servicios Cloud <strong>(Azure/M365)</strong> y <strong>consultoría técnica</strong> para el Tercer Sector.",
   "experience_project_coordinator": "Coordinador de Proyectos de Formación IT",
-  "experience_project_coordinator_description": "Gestión y coordinación de <strong>proyectos formativos</strong> en alfabetización digital, competencias básicas TIC y/o programación web técnica. <strong>Orientación, prospección laboral y colaboración docente en acciones formativas IT</strong>. <br />2023 - 2026 <br /> Fundación Esplai",
+  "experience_project_coordinator_description": "<span class='exp-meta'><strong>2023 - 2026</strong> | Fundación Esplai</span> Gestión y coordinación de <strong>proyectos formativos</strong> en alfabetización digital, competencias básicas TIC y/o programación web técnica. <strong>Orientación, prospección laboral y colaboración docente en acciones formativas IT</strong>.",
   "experience_hr_technician": "Técnico de RRHH | Talent Acquisition Specialist",
-  "experience_hr_technician_description": "Selección de personal para diversos sectores profesionales y clientes, con especial énfasis en el <strong>sector IT</strong> y roles profesionales técnicos. Administración laboral completa y <strong>gestión del talento</strong>. <br />2019 - 2023 <br /> Synergie - Iman - Manpower",
+  "experience_hr_technician_description": "<span class='exp-meta'><strong>2019 - 2023</strong> | Synergie - Iman - Manpower</span> Selección de personal para diversos sectores profesionales y clientes, con especial énfasis en el <strong>sector IT</strong> y roles profesionales técnicos. Administración laboral completa y <strong>gestión del talento</strong>.",
 
   "soft_skills_title": "🧠 Habilidades",
   "soft_skills_assertiveness": "Asertividad",

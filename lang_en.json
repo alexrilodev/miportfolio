@@ -42,9 +42,9 @@
   "education_app_development": "Hybrid Application Development with Android, iOS and Progressive Web Apps (PWA)",
   "education_web_development": "Web Application Development",
   "education_hr_management": "HR Management and Leadership",
-  "education_hr_management_description": "<strong>Master's Degree</strong> <br />2019 - 2021 <br /> UOC",
+  "education_hr_management_description": "<strong>Master's Degree</strong> <br />2019 - 2021 | UOC",
   "education_psychology": "Psychology",
-  "education_psychology_description": "<strong>Bachelor's Degree</strong> <br />2015 - 2019 <br /> UAB",
+  "education_psychology_description": "<strong>Bachelor's Degree</strong> <br />2015 - 2019 | UAB",
 
   "certification_title": "🥇 Certifications",
   "certification_aiskills_description": "Artificial Intelligence in the Microsoft ecosystem.",
@@ -55,11 +55,11 @@
 
   "experience_title": "💼 Experience",
   "experience_web_developer": "Application & Cloud Developer",
-  "experience_web_developer_description": "<strong>Full Stack</strong> programming of custom applications, <strong>CMS</strong> configuration, <strong>Microsoft 365</strong> workspace architecture, Cloud services <strong>(Azure/M365)</strong>, and <strong>technical consulting</strong> for the Third Sector. <br />2026 - Present <br /> Fundación Esplai",
+  "experience_web_developer_description": "<span class='exp-meta'><strong>2026 - Present</strong> | Fundación Esplai</span> <strong>Full Stack</strong> programming of custom applications, <strong>CMS</strong> configuration, <strong>Microsoft 365</strong> workspace architecture, Cloud services <strong>(Azure/M365)</strong>, and <strong>technical consulting</strong> for the Third Sector.",
   "experience_project_coordinator": "Training Project Coordinator IT",
-  "experience_project_coordinator_description": "Management and coordination of <strong>training projects</strong> in digital literacy, basic ICT skills, and/or technical web programming. <strong>Career guidance, labor market outreach, and instructional collaboration in IT training initiatives</strong>. <br />2023 - 2026 <br /> Fundación Esplai",
+  "experience_project_coordinator_description": "<span class='exp-meta'><strong>2023 - 2026</strong> | Fundación Esplai</span> Management and coordination of <strong>training projects</strong> in digital literacy, basic ICT skills, and/or technical web programming. <strong>Career guidance, labor market outreach, and instructional collaboration in IT training initiatives</strong>.",
   "experience_hr_technician": "HR Technician | Talent Acquisition Specialist",
-  "experience_hr_technician_description": "Personnel selection for different professional sectors and clients, with special emphasis on the <strong>IT sector</strong> and technical professional roles. Full labor administration, and <strong>talent management</strong>. <br />2019 - 2023 <br /> Synergie - Iman - Manpower",
+  "experience_hr_technician_description": "<span class='exp-meta'><strong>2019 - 2023</strong> | Synergie - Iman - Manpower</span> Personnel selection for different professional sectors and clients, with special emphasis on the <strong>IT sector</strong> and technical professional roles. Full labor administration, and <strong>talent management</strong>.",
 
   "soft_skills_title": "🧠 Soft Skills",
   "soft_skills_assertiveness": "Assertiveness",

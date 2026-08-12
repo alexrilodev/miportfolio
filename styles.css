@@ -315,6 +315,7 @@ section {
 #experiencia ul li h3,
 #formacion ul li h3 {
   color: var(--color-accent);
+  margin-bottom: 12px;
 }
 
 #formacion ul li img,

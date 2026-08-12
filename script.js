@@ -133,13 +133,37 @@ document.querySelectorAll('.carousel-container').forEach(container => {
   }
 });
 
-// === Expandir / contraer project-cards ===
+// === Expandir / contraer project-cards con animación suave ===
 document.querySelectorAll('.project-card').forEach(card => {
   card.addEventListener('click', function () {
+    const isExpanding = !this.classList.contains('expanded');
+
+    // Contrae cualquier otra tarjeta expandida
     document.querySelectorAll('.project-card.expanded').forEach(other => {
-      if (other !== card) other.classList.remove('expanded');
+      if (other !== this) {
+        other.style.maxHeight = other.scrollHeight + 'px';
+        other.classList.remove('expanded');
+        requestAnimationFrame(() => {
+          other.style.maxHeight = '';
+        });
+      }
     });
-    this.classList.toggle('expanded');
+
+    if (isExpanding) {
+      // Expandir: primero fijar la altura actual, luego animar a la altura completa
+      this.style.maxHeight = this.scrollHeight + 'px';
+      this.classList.add('expanded');
+      requestAnimationFrame(() => {
+        this.style.maxHeight = this.scrollHeight + 'px';
+      });
+    } else {
+      // Contraer: fijar altura actual, quitar clase, animar a max-height original
+      this.style.maxHeight = this.scrollHeight + 'px';
+      this.classList.remove('expanded');
+      requestAnimationFrame(() => {
+        this.style.maxHeight = '';
+      });
+    }
   });
 });
 

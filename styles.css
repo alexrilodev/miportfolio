@@ -385,9 +385,8 @@ section {
 .project-card {
   position: relative;
   margin: 0 15px 15px 15px;
-  height: 250px;
   overflow: hidden;
-  transition: height 0.5s ease;
+  transition: max-height 0.5s ease, padding-bottom 0.3s ease;
   background: #fff;
   padding: 20px;
   border-radius: var(--radius-lg);
@@ -397,6 +396,7 @@ section {
   width: 300px;
   display: flex;
   flex-direction: column;
+  max-height: 200px;
 }
 
 .project-card .card-img {
@@ -413,6 +413,7 @@ section {
 
 .project-card p {
   overflow: hidden;
+  margin: 0;
 }
 
 /* Degradado al final del texto */
@@ -429,7 +430,6 @@ section {
 }
 
 .project-card.expanded {
-  height: auto;
   overflow: visible;
 }
 

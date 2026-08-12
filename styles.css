@@ -385,9 +385,9 @@ section {
 .project-card {
   position: relative;
   margin: 0 15px 15px 15px;
-  max-height: 250px;
+  height: 250px;
   overflow: hidden;
-  transition: max-height 0.5s ease;
+  transition: height 0.5s ease;
   background: #fff;
   padding: 20px;
   border-radius: var(--radius-lg);
@@ -395,6 +395,8 @@ section {
   cursor: pointer;
   flex: 0 0 300px;
   width: 300px;
+  display: flex;
+  flex-direction: column;
 }
 
 .project-card .card-img {
@@ -402,6 +404,15 @@ section {
   margin: 0 auto;
   width: 100px;
   height: auto;
+  flex-shrink: 0;
+}
+
+.project-card h3 {
+  flex-shrink: 0;
+}
+
+.project-card p {
+  overflow: hidden;
 }
 
 /* Degradado al final del texto */
@@ -418,7 +429,11 @@ section {
 }
 
 .project-card.expanded {
-  max-height: 1000px;
+  height: auto;
+  overflow: visible;
+}
+
+.project-card.expanded p {
   overflow: visible;
 }
 

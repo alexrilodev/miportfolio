@@ -180,7 +180,7 @@ const openModal = async (card) => {
     a.href = link.url;
     a.target = '_blank';
     a.rel = 'noopener noreferrer';
-    a.textContent = `${link.icon} ${translations[link.label] || link.label}`;
+    a.textContent = translations[link.label] || link.label;
     modalLinks.appendChild(a);
   });
 

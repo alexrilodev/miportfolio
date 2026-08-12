@@ -1,11 +1,27 @@
 ﻿<!DOCTYPE html>
-
 <html lang="es">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfolio de Álex Ricart López - Desarrollador Web Full Stack">
-    <title data-translate="page_title"> Portfolio - Álex Ricart López</title>
+    <meta name="keywords" content="desarrollador web, full stack, portfolio, Angular, JavaScript, PHP, HTML, CSS">
+    <meta name="author" content="Álex Ricart López">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Portfolio - Álex Ricart López">
+    <meta property="og:description" content="Desarrollador Web Full Stack con experiencia en Angular, JavaScript, PHP y servicios Cloud">
+    <meta property="og:image" content="img/fotoperfil.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:locale:alternate" content="en_US">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Portfolio - Álex Ricart López">
+    <meta name="twitter:description" content="Desarrollador Web Full Stack con experiencia en Angular, JavaScript, PHP y servicios Cloud">
+    <meta name="twitter:image" content="img/fotoperfil.jpg">
+
+    <title data-translate="page_title">Portfolio - Álex Ricart López</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="img/portfolio.png" type="image/x-icon">
 </head>
@@ -13,8 +29,8 @@
 
     <!--NAVEGACIÓN-->
 
-    <nav>
-    <button id="toggle-nav" aria-label="Mostrar u ocultar menú">☰</button>
+    <nav aria-label="Navegación principal">
+    <button id="toggle-nav" aria-label="Mostrar u ocultar menú" aria-expanded="false">☰</button>
     <ul>
         <li><a href="#sobre-mi" data-translate="nav_about">Sobre mi</a></li>
         <li><a href="#experiencia" data-translate="nav_experience">Experiencia</a></li>
@@ -27,17 +43,19 @@
     </ul>
     </nav>
 
+    <main>
+
     <!--HEADER-->
 
-    <header id="sobre-mi"><br>
+    <header id="sobre-mi">
         <div class="header-container">
             <div class="foto-container">
-                <img src="img/fotoperfil.jpg" alt="Foto de perfil" />
+                <img src="img/fotoperfil.jpg" alt="Foto de perfil de Álex Ricart López, desarrollador web full stack" loading="lazy" />
             </div>
             <div class="texto-container">
                 <h1>Álex Ricart López</h1>
-                    <button class="lang-btn" data-lang="es" aria-label="Cambiar a español"><img src="img/flag_es.png" alt="Español" class="flag" /></button>
-                    <button class="lang-btn" data-lang="en" aria-label="Switch to English"><img src="img/flag_en.png" alt="English" class="flag" /></button>
+                    <button class="lang-btn" data-lang="es" aria-label="Cambiar a español"><img src="img/flag_es.png" alt="Bandera de España" class="flag" loading="lazy" /></button>
+                    <button class="lang-btn" data-lang="en" aria-label="Switch to English"><img src="img/flag_en.png" alt="UK Flag" class="flag" loading="lazy" /></button>
                 <h3 data-translate="hero_title_1">Profesional con experiencia en <span class="resaltar">Desarrollo de Aplicaciones</span> y <span class="resaltar">servicios Cloud</span>, con trayectoria previa en <span class="resaltar">Recursos Humanos</span> y <span class="resaltar">Psicología</span>. Mi trayectoria profesional combina:</h3>
                 <ul>
                     <li data-translate="experience_2"><span class="resaltar">Desarrollo Full Stack:</span> Formación y experiencia en Desarrollo de Aplicaciones Web, destacando mis habilidades en HTML, CSS, JavaScript, Java, C#, PHP, SQL, Node.js, Angular, VS Code, WordPress.</li>
@@ -45,8 +63,8 @@
                     <li data-translate="experience_1"><span class="resaltar">RRHH:</span> Sólida trayectoria en Selección, Formación, y Gestión del Talento de perfiles IT.</li>
                 </ul>
                 <h3 data-translate="hero_title_2">Este enfoque integral me permite aportar una <span class="resaltar">visión estratégica</span> en cualquier proyecto que lleve a cabo.</h3>
-                <a href="CV/Álex Ricart López_CV_ES.pdf" target="_blank" class="btn-download" data-translate="download_cv_es">CV - Español</a>
-                <a href="CV/Álex Ricart López_CV_EN.pdf" target="_blank" class="btn-download" data-translate="download_cv_en">CV - Inglés</a>
+                <a href="CV/Alex_Ricart_Lopez_CV_ES.pdf" target="_blank" class="btn-download" data-translate="download_cv_es">CV - Español</a>
+                <a href="CV/Alex_Ricart_Lopez_CV_EN.pdf" target="_blank" class="btn-download" data-translate="download_cv_en">CV - Inglés</a>
 
             </div>
         </div>
@@ -56,178 +74,179 @@
 
     <!--EXPERIENCIA-->
 
-    <section id="experiencia">
-        <h2 data-translate="experience_title">💼 Experiencia</h2>
+    <section id="experiencia" aria-labelledby="exp-title">
+        <h2 id="exp-title" data-translate="experience_title">💼 Experiencia</h2>
         <ul>
             <li>
                 <div>
                     <h3 data-translate="experience_web_developer">Desarrollador de Aplicaciones y Cloud</h3>
                     <p data-translate="experience_web_developer_description">Programación <strong>Full Stack</strong> de aplicaciones a medida, configuración de <strong>CMS</strong>, arquitectura de entornos de trabajo <strong>Microsoft 365</strong>, servicios en la nube <strong>(Azure/M365)</strong> y <strong>consultoría técnica</strong> para el Tercer Sector. <br />2026 - Actualidad <br /> Fundación Esplai</p>
                 </div>
-                <img src="img/experiencia-dev.png" alt="Imagen Desarrollador" />
+                <img src="img/experiencia-dev.png" alt="Ilustración representativa de desarrollo de software y cloud computing" loading="lazy" />
             </li>
             <li>
                 <div>
                     <h3 data-translate="experience_project_coordinator">Coordinador de Proyectos de Formación IT</h3>
                     <p data-translate="experience_project_coordinator_description">Gestión y coordinación de <strong>proyectos formativos</strong> en alfabetización digital, competencias básicas TIC y/o programación web técnica. <strong>Orientación, prospección laboral y colaboración docente en acciones formativas IT</strong>. <br />2023 - 2026 <br /> Fundación Esplai</p>
                 </div>
-                <img src="img/experiencia-orientacion.png" alt="Imagen Orientación" />
+                <img src="img/experiencia-orientacion.png" alt="Ilustración representativa de orientación laboral y formación" loading="lazy" />
             </li>
             <li>
                 <div>
                     <h3 data-translate="experience_hr_technician">Técnico de RRHH | Talent Acquisition Specialist</h3>
                     <p data-translate="experience_hr_technician_description">Selección de personal para diversos sectores profesionales y clientes, con especial énfasis en el <strong>sector IT</strong> y roles profesionales técnicos. Administración laboral completa y <strong>gestión del talento</strong>. <br />2019 - 2023 <br /> Synergie - Iman - Manpower</p>
                 </div>
-                <img src="img/experiencia-rrhh.png" alt="Imagen RRHH" />
+                <img src="img/experiencia-rrhh.png" alt="Ilustración representativa de recursos humanos y selección de personal" loading="lazy" />
             </li>
 
         </ul>
     </section>
 
-<!--FORMACIÓN-->
+    <!--FORMACIÓN-->
 
-    <section id="formacion">
-        <h2 data-translate="education_title">🎓 Formación</h2>
+    <section id="formacion" aria-labelledby="edu-title">
+        <h2 id="edu-title" data-translate="education_title">🎓 Formación</h2>
         <ul>
             <li>
                 <div>
                     <h3 data-translate="education_app_development">Desarrollo de Aplicaciones Híbridas con Android, iOS y Progressive Web Apps (PWA)</h3>
                     <p><strong>Bootcamp</strong> <br />2026 <br /> CIFO</p>
                 </div>
-                <img src="img/formacion-apps.png" alt="Imagen Aplicaciones" />
+                <img src="img/formacion-apps.png" alt="Ilustración de formación en desarrollo de aplicaciones móviles y PWA" loading="lazy" />
             </li>
             <li>
                 <div>
                     <h3 data-translate="education_web_development">Desarrollo de Aplicaciones Web</h3>
                     <p><strong>CFGS</strong> <br />2023 - 2025 <br /> ILERNA</p>
                 </div>
-                <img src="img/formacion-daw.png" alt="Imagen DAW" />
+                <img src="img/formacion-daw.png" alt="Ilustración de formación en Desarrollo de Aplicaciones Web" loading="lazy" />
             </li>
             <li>
                 <div>
                     <h3 data-translate="education_hr_management">Dirección y Gestión de RRHH</h3>
                     <p data-translate="education_hr_management_description"><strong>Máster Universitario</strong> <br />2019 - 2021 <br /> UOC</p>
                 </div>
-                <img src="img/formacion-rrhh.png" alt="Imagen RRHH" />
+                <img src="img/formacion-rrhh.png" alt="Ilustración de formación en Recursos Humanos" loading="lazy" />
             </li>
             <li>
                 <div>
                     <h3 data-translate="education_psychology">Psicología</h3>
                     <p data-translate="education_psychology_description"><strong>Grado Universitario</strong> <br />2015 - 2019 <br /> UAB</p>
                 </div>
-                <img src="img/formacion-psicologia.png" alt="Imagen Psicología" />
+                <img src="img/formacion-psicologia.png" alt="Ilustración de formación en Psicología" loading="lazy" />
             </li>
         </ul>
     </section>
 
-<!--HABILIDADES-->
+    <!--HABILIDADES-->
 
-    <section id="habilidades" class="proyectoscerthabilidades">
-        <h2 data-translate="soft_skills_title">🧠 Habilidades</h2>
+    <section id="habilidades" class="proyectoscerthabilidades" aria-labelledby="soft-title">
+        <h2 id="soft-title" data-translate="soft_skills_title">🧠 Habilidades</h2>
 
         <div class="carousel-container">
-            <button class="carousel-btn prev">&#10094;</button>
+            <button class="carousel-btn prev" aria-label="Anterior">&#10094;</button>
 
             <div class="carousel">
                 <div class="project-card">
                     <h3 data-translate="soft_skills_assertiveness">Asertividad</h3>
-                    <img src="img/asertividad.png" alt="Asertividad" style="display:block; margin: 0 auto; width: 100px; height: auto;" />
+                    <img src="img/asertividad.png" alt="Habilidad blanda: Asertividad" class="card-img" loading="lazy" />
                 </div>
 
                 <div class="project-card">
                     <h3 data-translate="soft_skills_resilience">Resiliencia</h3>
-                    <img src="img/resiliencia.png" alt="Resiliencia" style="display:block; margin: 0 auto; width: 100px; height: auto;" />
+                    <img src="img/resiliencia.png" alt="Habilidad blanda: Resiliencia" class="card-img" loading="lazy" />
                 </div>
 
                 <div class="project-card">
                     <h3 data-translate="soft_skills_proactivity">Proactividad</h3>
-                    <img src="img/proactividad.png" alt="Proactividad" style="display:block; margin: 0 auto; width: 100px; height: auto;" />
+                    <img src="img/proactividad.png" alt="Habilidad blanda: Proactividad" class="card-img" loading="lazy" />
                 </div>
 
                 <div class="project-card">
                     <h3 data-translate="soft_skills_creativity">Creatividad</h3>
-                    <img src="img/creatividad.png" alt="Creatividad" style="display:block; margin: 0 auto; width: 100px; height: auto;" />
+                    <img src="img/creatividad.png" alt="Habilidad blanda: Creatividad" class="card-img" loading="lazy" />
                 </div>
 
                 <div class="project-card">
                     <h3 data-translate="soft_skills_problem_solving">Resolución de problemas</h3>
-                    <img src="img/resolutivo.png" alt="Resolución de problemas" style="display:block; margin: 0 auto; width: 100px; height: auto;" />
+                    <img src="img/resolutivo.png" alt="Habilidad blanda: Resolución de problemas" class="card-img" loading="lazy" />
                 </div>
 
                 <div class="project-card">
                     <h3 data-translate="soft_skills_social">Habilidades sociales</h3>
-                    <img src="img/social.png" alt="Habilidades sociales" style="display:block; margin: 0 auto; width: 100px; height: auto;" />
+                    <img src="img/social.png" alt="Habilidad blanda: Habilidades sociales" class="card-img" loading="lazy" />
                 </div>
 
             </div>
-            <button class="carousel-btn next">&#10095;</button>
+            <button class="carousel-btn next" aria-label="Siguiente">&#10095;</button>
 
         </div>
     </section>
 
     <!--TECH-->
 
-    <section id="stack-tecnologico">
-        <h2 data-translate="stack_title">💻 Conocimientos Técnicos</h2>
+    <section id="stack-tecnologico" aria-labelledby="stack-title">
+        <h2 id="stack-title" data-translate="stack_title">💻 Conocimientos Técnicos</h2>
         <div class="stack-container">
             <div class="stack-item">
                 <h3>HTML</h3>
-                <img src="img/logohtml.png" alt="HTML" />
+                <img src="img/logohtml.png" alt="Logo de HTML5" loading="lazy" />
             </div>
             <div class="stack-item">
                 <h3>CSS</h3>
-                <img src="img/logocss.png" alt="CSS" />
+                <img src="img/logocss.png" alt="Logo de CSS3" loading="lazy" />
             </div>
             <div class="stack-item">
                 <h3>JavaScript</h3>
-                <img src="img/logojavascript.png" alt="JavaScript" />
+                <img src="img/logojavascript.png" alt="Logo de JavaScript" loading="lazy" />
             </div>
             <div class="stack-item">
                 <h3>Java</h3>
-                <img src="img/logojava.png" alt="Java" />
+                <img src="img/logojava.png" alt="Logo de Java" loading="lazy" />
             </div>
             <div class="stack-item">
                 <h3>C#</h3>
-                <img src="img/logonet.png" alt="C#" />
+                <img src="img/logonet.png" alt="Logo de C# .NET" loading="lazy" />
             </div>
             <div class="stack-item">
                 <h3>PHP</h3>
-                <img src="img/logophp.png" alt="PHP" />
+                <img src="img/logophp.png" alt="Logo de PHP" loading="lazy" />
             </div>
             <div class="stack-item">
                 <h3>SQL</h3>
-                <img src="img/logosql.png" alt="SQL" />
+                <img src="img/logosql.png" alt="Logo de SQL" loading="lazy" />
             </div>
             <div class="stack-item">
                 <h3>Node.js</h3>
-                <img src="img/logonodejs.png" alt="Node.js" />
-            </div><div class="stack-item">
+                <img src="img/logonodejs.png" alt="Logo de Node.js" loading="lazy" />
+            </div>
+            <div class="stack-item">
                 <h3>Angular</h3>
-                <img src="img/logoangular.png" alt="Angular" />
+                <img src="img/logoangular.png" alt="Logo de Angular" loading="lazy" />
             </div>
             <div class="stack-item">
                 <h3>VS Code</h3>
-                <img src="img/vscode.png" alt="VS Code" />
+                <img src="img/vscode.png" alt="Logo de Visual Studio Code" loading="lazy" />
             </div>
             <div class="stack-item">
                 <h3>WordPress</h3>
-                <img src="img/logowordpress.png" alt="WordPress" />
+                <img src="img/logowordpress.png" alt="Logo de WordPress" loading="lazy" />
             </div>
         </div>
     </section>
 
     <!--PROYECTOS-->
 
-    <section id="proyectos" class="proyectoscerthabilidades">
-        <h2 data-translate="projects_title">📊 Proyectos</h2>
+    <section id="proyectos" class="proyectoscerthabilidades" aria-labelledby="proj-title">
+        <h2 id="proj-title" data-translate="projects_title">📊 Proyectos</h2>
         
         <div class="carousel-container">
-            <button class="carousel-btn prev">&#10094;</button>
+            <button class="carousel-btn prev" aria-label="Anterior">&#10094;</button>
 
             <div class="carousel">
                 
                 <div class="project-card">
-                    <img src="img/angularcrud.png" alt="TO-DO APP" style="display:block; margin: 0 auto; width: 100px; height: auto;" />
+                    <img src="img/angularcrud.png" alt="Captura de la TO-DO APP desarrollada con Angular" class="card-img" loading="lazy" />
                     <h3>TO-DO APP</h3>
                     <p data-translate="project_angularcrud_description"> 
                         Aplicación web para gestionar tareas pendientes desarrollada con <strong>Angular</strong>. Diseñada bajo una arquitectura <strong>CRUD</strong> moderna basada en <strong>Signals</strong> para una reactividad eficiente y un sistema de <strong>enrutamiento dinámico (Routing)</strong>.<br><br> 
@@ -243,7 +262,7 @@
                 </div>
                 
                 <div class="project-card">
-                    <img src="img/momitos.png" alt="Momitos Handmade" style="display:block; margin: 0 auto; width: 100px; height: auto;" />
+                    <img src="img/momitos.png" alt="Captura de Momitos Handmade, plataforma web de productos artesanales" class="card-img" loading="lazy" />
                     <h3>Momitos Handmade</h3>
                     <p data-translate="project_momitos_description"> 
                         Plataforma web diseñada para exhibir y gestionar los productos artesanales de <strong>Momitos Handmade</strong>, un proyecto de creación textil hecho a mano. Desarrollo Full Stack: <strong>HTML - CSS</strong> (maquetación y diseño visual) / <strong>JavaScript</strong> 
@@ -259,7 +278,7 @@
                 </div>
 
                 <div class="project-card">
-                    <img src="img/orientait.png" alt="Orienta IT" style="display:block; margin: 0 auto; width: 100px; height: auto;" />
+                    <img src="img/orientait.png" alt="Captura de Orienta IT, plataforma web para el sector IT" class="card-img" loading="lazy" />
                     <h3>Orienta IT</h3>
                     <p data-translate="project_orientait_description">
                         Plataforma web que busca cubrir necesidades de <strong>empresas</strong> y <strong>candidatos</strong> del <strong>sector IT</strong>. Desarrollo Full Stack: 
@@ -276,7 +295,7 @@
                 </div>
 
                 <div class="project-card">
-                    <img src="img/portfolio.png" alt="Portfolio personalizado" style="display:block; margin: 0 auto; width: 100px; height: auto;" />
+                    <img src="img/portfolio.png" alt="Captura del portfolio personalizado de Álex Ricart López" class="card-img" loading="lazy" />
                     <h3 data-translate="project_portfolio_title">Porfolio personalizado</h3>
                     <p data-translate="project_portfolio_description">
                         Proyecto de desarrollo web de mi portfolio actual. Desarrollado con <strong>HTML, CSS, JavaScript</strong> y con capacidad <strong>responsive</strong>.<br><br>
@@ -288,7 +307,7 @@
                 </div>
 
                 <div class="project-card">
-                    <img src="img/proyectopiedrapapeltijeras.png" alt="Juego Piedra, Papel, Tijeras" style="display:block; margin: 0 auto; width: 100px; height: auto;" />
+                    <img src="img/proyectopiedrapapeltijeras.png" alt="Captura del juego Piedra, Papel, Tijeras" class="card-img" loading="lazy" />
                     <h3 data-translate="project_rock_paper_scissors_title">Juego Piedra, Papel, Tijeras</h3>
                     <p data-translate="project_rock_paper_scissors_description">
                         Juego interactivo de Piedra, Papel, Tijeras desarrollado con <strong>HTML, CSS y JavaScript</strong>.<br><br> Dispone de detección de datos no válidos, historial de partidas y reseteo de partidas.
@@ -302,22 +321,22 @@
                 </div>
 
             </div>
-            <button class="carousel-btn next">&#10095;</button>
+            <button class="carousel-btn next" aria-label="Siguiente">&#10095;</button>
 
         </div>
     </section>
 
-<!--CERTIFICACIONES-->
+    <!--CERTIFICACIONES-->
 
-    <section id="certificaciones" class="proyectoscerthabilidades">
-        <h2 data-translate="certification_title">🥇 Certificaciones</h2>
+    <section id="certificaciones" class="proyectoscerthabilidades" aria-labelledby="cert-title">
+        <h2 id="cert-title" data-translate="certification_title">🥇 Certificaciones</h2>
 
         <div class="carousel-container">
-            <button class="carousel-btn prev">&#10094;</button>
+            <button class="carousel-btn prev" aria-label="Anterior">&#10094;</button>
             
             <div class="carousel">
                 <div class="project-card">
-                    <img src="cursos/AI Microsoft.png" alt="Certificación IA Skills Microsoft" style="display:block; margin: 0 auto; width: 100px; height: auto;" />
+                    <img src="cursos/AI Microsoft.png" alt="Certificación AI Skills Microsoft" class="card-img" loading="lazy" />
                     <h3>AI Skills</h3>
                     <p data-translate="certification_aiskills_description">Inteligencia Artificial en ecosistema Microsoft.</p>
                     <div class="texto-proyecto">
@@ -325,7 +344,7 @@
                     </div>
                 </div>
                 <div class="project-card">
-                    <img src="cursos/Curso HTML.jpg" alt="Certificación HTML" style="display:block; margin: 0 auto; width: 100px; height: auto;" />
+                    <img src="cursos/Curso HTML.jpg" alt="Certificación de curso de HTML" class="card-img" loading="lazy" />
                     <h3>HTML</h3>
                     <p data-translate="certification_html_description">Introducción al desarrollo web con HTML.</p>
                     <div class="texto-proyecto">
@@ -334,7 +353,7 @@
                 </div>
 
                 <div class="project-card">
-                    <img src="cursos/Curso CSS.jpg" alt="Certificación CSS" style="display:block; margin: 0 auto; width: 100px; height: auto;" />
+                    <img src="cursos/Curso CSS.jpg" alt="Certificación de curso de CSS" class="card-img" loading="lazy" />
                     <h3>CSS</h3>
                     <p data-translate="certification_css_description">Introducción al diseño web con CSS.</p>
                     <div class="texto-proyecto">
@@ -342,58 +361,60 @@
                     </div>
                 </div>            
             </div>
-            <button class="carousel-btn next">&#10095;</button>
+            <button class="carousel-btn next" aria-label="Siguiente">&#10095;</button>
 
         </div>
     </section>
 
     <!--CONTACTO-->
 
-    <section id="contacto">
-        <h2 data-translate="contact_title">💬 Contacto</h2>
+    <section id="contacto" aria-labelledby="contact-title">
+        <h2 id="contact-title" data-translate="contact_title">💬 Contacto</h2>
         <div class="contacto-container">
             <div class="contacto-item">
-                <img src="img/phone.png" alt="Teléfono" />
+                <img src="img/phone.png" alt="Icono de teléfono" loading="lazy" />
                 <p>+34 608 11 02 87</p>
             </div>
             <div class="contacto-item">
-                <img src="img/email.png" alt="Email" />
+                <img src="img/email.png" alt="Icono de correo electrónico" loading="lazy" />
                 <a href="mailto:alexricartlopez.job@gmail.com"><strong>alexricartlopez.job@gmail.com</strong></a>
             </div>
             <div class="contacto-item">
-                <img src="img/linkedin.png" alt="LinkedIn" />
+                <img src="img/linkedin.png" alt="Icono de LinkedIn" loading="lazy" />
                 <a href="https://linkedin.com/in/alexrilo" target="_blank"><strong>Álex Ricart López</strong></a>
             </div>
             <div class="contacto-item">
-                <img src="img/github.png" alt="GitHub" />
+                <img src="img/github.png" alt="Icono de GitHub" loading="lazy" />
                 <a href="https://github.com/alexrilodev" target="_blank"><strong>alexrilodev</strong></a>
             </div>
            
-            <form id="formContacto" method="POST">
+            <form id="formContacto" method="POST" novalidate>
 
                 <h4 data-translate="form_title">📝 Puedes contactarme a través del formulario y te responderé lo antes posible:</h4>
 
                 <label data-translate="form_name" style="font-style: italic;" for="nombre">Nombre</label>
-                <input type="text" id="nombre" name="nombre" required>
+                <input type="text" id="nombre" name="nombre" required aria-required="true">
                 <br>
                 <label data-translate="form_email" style="font-style: italic;" for="email">Correo electrónico</label>
-                <input type="email" id="email" name="_replyto" required>
+                <input type="email" id="email" name="_replyto" required aria-required="true">
                 <br>
                 <label data-translate="form_message" style="font-style: italic;" for="mensaje">Motivo del contacto</label>
-                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                <textarea id="mensaje" name="mensaje" rows="4" required aria-required="true"></textarea>
                 <br>
                 <input data-translate="form_submit" type="submit" value="Enviar">
             
-                <div id="statusMessage" style="margin-top: 15px;"></div>
+                <div id="statusMessage" style="margin-top: 15px;" aria-live="polite"></div>
             </form>
 
         </div>
     </section>
 
+    </main>
+
     <!--FOOTER-->
 
     <footer>
-        <p>© 2025 Álex Ricart López</p>
+        <p>&copy; <span id="current-year"></span> Álex Ricart López</p>
     </footer>
 
     <script src="script.js"></script>

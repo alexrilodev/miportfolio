@@ -7,21 +7,24 @@ document.addEventListener('DOMContentLoaded', () => {
   const navLinks = document.querySelectorAll('nav ul li a');
   let isDesktop = window.innerWidth > 768;
 
+  if (!nav || !toggleBtn || !navList) return;
+
   // Mostrar / ocultar menú en móviles con transición suave
   toggleBtn.addEventListener('click', () => {
     navList.classList.toggle('show');
     nav.classList.toggle('active');
+    const isExpanded = nav.classList.contains('active');
+    toggleBtn.setAttribute('aria-expanded', isExpanded);
   });
 
   // Interceptar navegación para no modificar el hash
   navLinks.forEach(link => {
     link.addEventListener('click', function(e) {
-      e.preventDefault(); // evita cambiar el hash (#seccion)
+      e.preventDefault();
 
       const targetId = this.getAttribute('href').substring(1);
       const target = document.getElementById(targetId);
 
-      // Scroll suave hacia la sección
       if (target) {
         target.scrollIntoView({ behavior: 'smooth' });
       }
@@ -30,6 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (window.innerWidth <= 768) {
         navList.classList.remove('show');
         nav.classList.remove('active');
+        toggleBtn.setAttribute('aria-expanded', 'false');
       }
     });
   });
@@ -57,28 +61,52 @@ document.addEventListener('DOMContentLoaded', () => {
     isDesktop = window.innerWidth > 768;
     if (isDesktop) {
       navList.classList.remove('show');
-      nav.style.top = '0';
-    } else {
-      nav.style.top = '0';
+      nav.classList.remove('active');
+      toggleBtn.setAttribute('aria-expanded', 'false');
     }
+    nav.style.top = '0';
   });
+
+  // Indicador de sección activa con Intersection Observer
+  const sections = document.querySelectorAll('section[id]');
+  const observerOptions = { rootMargin: '-50% 0px -50% 0px' };
+
+  const sectionObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const id = entry.target.getAttribute('id');
+        navLinks.forEach(link => {
+          link.style.backgroundColor = link.getAttribute('href') === `#${id}`
+            ? 'var(--color-highlight-hover)'
+            : '';
+        });
+      }
+    });
+  }, observerOptions);
+
+  sections.forEach(section => sectionObserver.observe(section));
 });
 
 
-// ==== CARRUSELES (Proyectos y Certificaciones) ====
+// ==== CARRUSELES (Proyectos, Certificaciones y Habilidades) ====
 document.querySelectorAll('.carousel-container').forEach(container => {
   const carousel = container.querySelector('.carousel');
   const nextBtn = container.querySelector('.carousel-btn.next');
   const prevBtn = container.querySelector('.carousel-btn.prev');
 
   if (carousel && nextBtn && prevBtn) {
-    // Movimiento con botones
+    // Movimiento con botones (adaptable al tamaño de las tarjetas)
+    const getScrollAmount = () => {
+      const card = carousel.querySelector('.project-card');
+      return card ? card.offsetWidth + 20 : 320; // 20px del gap
+    };
+
     nextBtn.addEventListener('click', () => {
-      carousel.scrollBy({ left: 320, behavior: 'smooth' });
+      carousel.scrollBy({ left: getScrollAmount(), behavior: 'smooth' });
     });
 
     prevBtn.addEventListener('click', () => {
-      carousel.scrollBy({ left: -320, behavior: 'smooth' });
+      carousel.scrollBy({ left: -getScrollAmount(), behavior: 'smooth' });
     });
 
     // Movimiento táctil / arrastre con ratón
@@ -108,15 +136,18 @@ document.querySelectorAll('.carousel-container').forEach(container => {
 // === Expandir / contraer project-cards ===
 document.querySelectorAll('.project-card').forEach(card => {
   card.addEventListener('click', function () {
-    // Contrae cualquier otra tarjeta expandida
     document.querySelectorAll('.project-card.expanded').forEach(other => {
       if (other !== card) other.classList.remove('expanded');
     });
-
-    // Alterna el estado de la tarjeta clicada
     this.classList.toggle('expanded');
   });
 });
+
+// ==== FOOTER DINÁMICO ====
+const yearSpan = document.getElementById('current-year');
+if (yearSpan) {
+  yearSpan.textContent = new Date().getFullYear();
+}
 
 // ==== MANEJO DEL FORMULARIO CON ASYNC/AWAIT (FETCH API) ====
 
@@ -124,23 +155,31 @@ const FORMSPREE_URL = "https://formspree.io/f/mdkwrlyw";
 const form = document.getElementById('formContacto');
 const statusMessage = document.getElementById('statusMessage');
 
-// Función para cargar el archivo de idioma actual
-const getTranslations = async () => {
-    const lang = localStorage.getItem('lang') || 'es';
-    const response = await fetch(`./lang_${lang}.json`);
-    return await response.json();
-};
-
 if (form) {
     form.addEventListener('submit', async (e) => {
         e.preventDefault();
 
-        const translations = await getTranslations(); // ← Cargamos el idioma actual
+        // Cargar traducciones inline (sin duplicar la función de lang.js)
+        const lang = localStorage.getItem('lang') || 'es';
+        let translations;
+        try {
+            const response = await fetch(`./lang_${lang}.json`);
+            translations = await response.json();
+        } catch (error) {
+            translations = {
+                form_sending: 'Enviando...',
+                form_success: '✅ ¡Mensaje enviado!',
+                form_error: '❌ Error al enviar.',
+                form_submit_js: 'Enviar'
+            };
+        }
 
         const submitButton = form.querySelector('input[type="submit"]');
-        submitButton.value = translations["form_sending"];
-        submitButton.disabled = true;
-        statusMessage.innerHTML = '';
+        if (submitButton) {
+            submitButton.value = translations["form_sending"];
+            submitButton.disabled = true;
+        }
+        if (statusMessage) statusMessage.innerHTML = '';
 
         const formData = new FormData(form);
 
@@ -152,24 +191,30 @@ if (form) {
             });
 
             if (response.ok) {
-                statusMessage.innerHTML = `
-                    <p style="color: #4CAF50; font-weight: bold; background-color: #e8f5e9; padding: 10px; border-radius: 8px;">
-                        ${translations["form_success"]}
-                    </p>
-                `;
+                if (statusMessage) {
+                    statusMessage.innerHTML = `
+                        <p style="color: #4CAF50; font-weight: bold; background-color: #e8f5e9; padding: 10px; border-radius: 8px;">
+                            ${translations["form_success"]}
+                        </p>
+                    `;
+                }
                 form.reset();
             } else {
                 throw new Error('Error en el envío');
             }
         } catch (error) {
-            statusMessage.innerHTML = `
-                <p style="color: #D32F2F; font-weight: bold; background-color: #ffcdd2; padding: 10px; border-radius: 8px;">
-                    ${translations["form_error"]}
-                </p>
-            `;
+            if (statusMessage) {
+                statusMessage.innerHTML = `
+                    <p style="color: #D32F2F; font-weight: bold; background-color: #ffcdd2; padding: 10px; border-radius: 8px;">
+                        ${translations["form_error"]}
+                    </p>
+                `;
+            }
         } finally {
-            submitButton.value = translations["form_submit_js"];
-            submitButton.disabled = false;
+            if (submitButton) {
+                submitButton.value = translations["form_submit_js"];
+                submitButton.disabled = false;
+            }
         }
     });
 }

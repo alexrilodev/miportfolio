@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://alexrilodev.github.io/miportfolio/sitemap.xml

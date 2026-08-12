@@ -133,38 +133,89 @@ document.querySelectorAll('.carousel-container').forEach(container => {
   }
 });
 
-// === Expandir / contraer project-cards con animación suave ===
-document.querySelectorAll('.project-card').forEach(card => {
-  card.addEventListener('click', function () {
-    const isExpanding = !this.classList.contains('expanded');
+// === MODAL DE PROYECTOS ===
+const modal = document.getElementById('projectModal');
+const modalImg = document.getElementById('modal-img');
+const modalTitle = document.getElementById('modal-title');
+const modalDesc = document.getElementById('modal-description');
+const modalLinks = document.getElementById('modal-links');
+const modalClose = document.querySelector('.modal-close');
 
-    // Contrae cualquier otra tarjeta expandida
-    document.querySelectorAll('.project-card.expanded').forEach(other => {
-      if (other !== this) {
-        other.style.maxHeight = other.scrollHeight + 'px';
-        other.classList.remove('expanded');
-        requestAnimationFrame(() => {
-          other.style.maxHeight = '';
-        });
-      }
-    });
+// Traducciones缓存
+let cachedTranslations = null;
 
-    if (isExpanding) {
-      // Expandir: primero fijar la altura actual, luego animar a la altura completa
-      this.style.maxHeight = this.scrollHeight + 'px';
-      this.classList.add('expanded');
-      requestAnimationFrame(() => {
-        this.style.maxHeight = this.scrollHeight + 'px';
-      });
-    } else {
-      // Contraer: fijar altura actual, quitar clase, animar a max-height original
-      this.style.maxHeight = this.scrollHeight + 'px';
-      this.classList.remove('expanded');
-      requestAnimationFrame(() => {
-        this.style.maxHeight = '';
-      });
-    }
+const getTranslations = async () => {
+  if (cachedTranslations) return cachedTranslations;
+  const lang = localStorage.getItem('lang') || 'es';
+  try {
+    const response = await fetch(`./lang_${lang}.json`);
+    cachedTranslations = await response.json();
+  } catch (error) {
+    cachedTranslations = {};
+  }
+  return cachedTranslations;
+};
+
+// Limpiar caché cuando cambia el idioma
+const clearTranslationsCache = () => { cachedTranslations = null; };
+
+const openModal = async (card) => {
+  const translations = await getTranslations();
+
+  const imgSrc = card.dataset.projectImg;
+  const imgAlt = card.dataset.projectImgAlt;
+  const title = card.dataset.projectTitle;
+  const descKey = card.dataset.projectDesc;
+  const linksData = JSON.parse(card.dataset.projectLinks || '[]');
+
+  modalImg.src = imgSrc;
+  modalImg.alt = imgAlt;
+  modalTitle.textContent = title;
+  modalDesc.innerHTML = translations[descKey] || '';
+
+  // Renderizar enlaces
+  modalLinks.innerHTML = '';
+  linksData.forEach(link => {
+    const a = document.createElement('a');
+    a.href = link.url;
+    a.target = '_blank';
+    a.rel = 'noopener noreferrer';
+    a.textContent = `${link.icon} ${translations[link.label] || link.label}`;
+    modalLinks.appendChild(a);
   });
+
+  modal.hidden = false;
+  requestAnimationFrame(() => modal.classList.add('active'));
+  document.body.style.overflow = 'hidden';
+};
+
+const closeModal = () => {
+  modal.classList.remove('active');
+  document.body.style.overflow = '';
+  setTimeout(() => { modal.hidden = true; }, 300);
+};
+
+// Event listeners para abrir modal
+document.querySelectorAll('#proyectos .project-card').forEach(card => {
+  card.addEventListener('click', () => openModal(card));
+});
+
+// Cerrar modal
+if (modalClose) modalClose.addEventListener('click', closeModal);
+if (modal) {
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) closeModal();
+  });
+}
+
+// Cerrar con Escape
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' && modal && !modal.hidden) closeModal();
+});
+
+// Invalidar caché de traducciones al cambiar idioma
+document.querySelectorAll('.lang-btn').forEach(btn => {
+  btn.addEventListener('click', clearTranslationsCache);
 });
 
 // ==== FOOTER DINÁMICO ====
@@ -183,20 +234,7 @@ if (form) {
     form.addEventListener('submit', async (e) => {
         e.preventDefault();
 
-        // Cargar traducciones inline (sin duplicar la función de lang.js)
-        const lang = localStorage.getItem('lang') || 'es';
-        let translations;
-        try {
-            const response = await fetch(`./lang_${lang}.json`);
-            translations = await response.json();
-        } catch (error) {
-            translations = {
-                form_sending: 'Enviando...',
-                form_success: '✅ ¡Mensaje enviado!',
-                form_error: '❌ Error al enviar.',
-                form_submit_js: 'Enviar'
-            };
-        }
+        const translations = await getTranslations();
 
         const submitButton = form.querySelector('input[type="submit"]');
         if (submitButton) {

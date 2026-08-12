@@ -26,6 +26,7 @@
   "project_orientait_description": "Web platform designed to meet the needs of <strong>companies</strong> and <strong>candidates</strong> in the <strong>IT sector</strong>. Full Stack Development: <strong>HTML - CSS</strong> (layout - design) / <strong>JavaScript</strong> (front-end) / <strong>PHP</strong> (back-end) / <strong>Bootstrap</strong> (framework) / <strong>MySQL</strong> (database) / <strong>InfinityFree</strong> (free hosting).<br><br> It features responsive design, registration/login validation, user-role functionality (candidate / company / admin), job posting and management, job applications, search filters, CV uploads, and career guidance resources, as well as scheduled appointments with the admin.",
   "project_link": "🌐 Project Link",
   "project_video": "🎥 Demo Video",
+  "project_see_more": "See more",
   "project_portfolio_title": "Custom Portfolio",
   "project_portfolio_description": "Development project of my personal portfolio website. Built with <strong>HTML, CSS, and JavaScript</strong> and fully <strong>responsive</strong>.<br><br> Includes basic animations, adaptive navigation, external links, file downloads, and Spanish / English translation.",
   "project_repository": "⚙️ Project Repository",

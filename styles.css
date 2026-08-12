@@ -352,13 +352,6 @@ section {
   padding: 20px;
 }
 
-.proyectoscerthabilidades img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 5px;
-  filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.3));
-}
-
 .carousel-container {
   position: relative;
   display: flex;
@@ -381,25 +374,22 @@ section {
   display: none;
 }
 
-/* PROJECT CARDS CON DESPLEGABLE */
-.project-card {
+/* CARRUSEL CARDS - Base compartida */
+.carousel-card {
   position: relative;
   margin: 0 15px 15px 15px;
-  overflow: hidden;
-  transition: max-height 0.5s ease, padding-bottom 0.3s ease;
   background: #fff;
   padding: 20px;
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-lg);
-  cursor: pointer;
   flex: 0 0 300px;
   width: 300px;
   display: flex;
   flex-direction: column;
-  max-height: 200px;
+  align-items: center;
 }
 
-.project-card .card-img {
+.carousel-card .card-img {
   display: block;
   margin: 0 auto;
   width: 100px;
@@ -407,38 +397,187 @@ section {
   flex-shrink: 0;
 }
 
-.project-card h3 {
+.carousel-card h3 {
   flex-shrink: 0;
+  margin: 10px 0;
 }
 
-.project-card p {
-  overflow: hidden;
+/* PROJECT CARDS - Modal */
+.project-card {
+  cursor: pointer;
+  transition: transform var(--transition-fast);
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+}
+
+.project-card .card-preview {
+  font-size: 0.9rem;
+  color: #666;
+  text-align: center;
   margin: 0;
+  overflow: hidden;
 }
 
-/* Degradado al final del texto */
-.project-card::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
+.project-card .card-cta {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 6px 16px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+  border-radius: 20px;
+  transition: background-color var(--transition-normal), color var(--transition-normal);
+}
+
+.project-card:hover .card-cta {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+/* SKILL CARDS - Habilidades */
+.skill-card {
+  text-align: center;
+  transition: transform var(--transition-fast);
+}
+
+.skill-card:hover {
+  transform: translateY(-4px);
+}
+
+/* CERT CARDS - Certificaciones */
+.cert-card {
+  text-align: center;
+}
+
+.cert-card .card-link {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 8px 18px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: var(--color-primary);
+  text-decoration: none;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  transition: background-color var(--transition-normal), transform var(--transition-fast);
+}
+
+.cert-card .card-link:hover {
+  background-color: var(--color-accent);
+  transform: scale(1.05);
+}
+
+/* MODAL */
+.modal-overlay {
+  position: fixed;
+  top: 0;
   left: 0;
   width: 100%;
-  height: 60px;
-  background: linear-gradient(to top, var(--color-bg-section) 10%, rgba(244, 244, 244, 0));
-  pointer-events: none;
-  transition: opacity var(--transition-normal);
-}
-
-.project-card.expanded {
-  overflow: visible;
-}
-
-.project-card.expanded p {
-  overflow: visible;
-}
-
-.project-card.expanded::after {
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
   opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-content {
+  background: #fff;
+  border-radius: var(--radius-lg);
+  max-width: 600px;
+  width: 90%;
+  max-height: 85vh;
+  overflow-y: auto;
+  position: relative;
+  transform: translateY(20px) scale(0.95);
+  transition: transform 0.3s ease;
+}
+
+.modal-overlay.active .modal-content {
+  transform: translateY(0) scale(1);
+}
+
+.modal-close {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #666;
+  line-height: 1;
+  transition: color var(--transition-fast);
+  z-index: 10;
+}
+
+.modal-close:hover {
+  color: var(--color-text);
+}
+
+.modal-body {
+  padding: 30px;
+}
+
+.modal-img {
+  width: 120px;
+  height: auto;
+  display: block;
+  margin: 0 auto 15px auto;
+  border-radius: var(--radius-md);
+  filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.3));
+}
+
+.modal-body h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+#modal-description {
+  line-height: 1.7;
+  color: #444;
+}
+
+#modal-description strong {
+  color: var(--color-accent);
+}
+
+#modal-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+#modal-links a {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 0.95rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: var(--color-primary);
+  text-decoration: none;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  transition: background-color var(--transition-normal), transform var(--transition-fast);
+}
+
+#modal-links a:hover {
+  background-color: var(--color-accent);
+  transform: scale(1.05);
 }
 
 .carousel-btn {

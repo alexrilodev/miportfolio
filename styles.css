@@ -312,6 +312,11 @@ section {
   flex: 1;
 }
 
+#experiencia ul li h3,
+#formacion ul li h3 {
+  color: var(--color-accent);
+}
+
 #formacion ul li img,
 #experiencia ul li img {
   width: 95px;
@@ -564,7 +569,7 @@ section {
 }
 
 #modal-description strong {
-  color: var(--color-accent);
+  color: #000;
 }
 
 #modal-links {

@@ -598,6 +598,7 @@ section > h2 {
 #modal-description {
   line-height: 1.7;
   color: #444;
+  text-align: center;
 }
 
 #modal-description strong {

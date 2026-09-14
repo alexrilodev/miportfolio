@@ -39,6 +39,9 @@
   "project_rock_paper_scissors_title": "Juego Piedra, Papel, Tijeras",
   "project_rock_paper_scissors_description": "Juego interactivo de Piedra, Papel, Tijeras desarrollado con <strong>HTML, CSS y JavaScript</strong>.<br><br> Dispone de detección de datos no válidos, historial de partidas y reseteo de partidas.",
   "project_rock_paper_scissors_preview": "Juego interactivo de Piedra, Papel, Tijeras desarrollado con HTML, CSS y JavaScript...",
+  "project_bvdget_description": "Aplicación de gestión financiera individual y en grupo desarrollada con <strong>Angular e Ionic</strong>, desplegada como <strong>PWA</strong> con soporte offline. Backend en <strong>Firebase</strong> (Firestore, Authentication con email y Google, Hosting). Utiliza <strong>Capacitor</strong> para despliegue nativo y <strong>Chart.js</strong> para visualización de datos.<br><br> Funcionalidades: registro y autenticación de usuarios, panel principal con resumen mensual y gráficas interactivas de tendencias y gastos por categoría, gestión de ingresos y gastos con filtros avanzados, planes de ahorro con seguimiento de progreso, y sistema de grupos compartidos con división configurable de gastos entre miembros. Soporta modo personal y grupal con cambio de contexto en tiempo real.<br><br><span class='badge-status'>En desarrollo</span>",
+  "project_bvdget_preview": "Aplicación de gestión financiera individual y en grupo desarrollada con Angular e Ionic...",
+  "project_bvdget_see_more": "📸 Capturas MVP",
 
   "education_title": "🎓 Formación",
   "education_app_development": "Desarrollo de Aplicaciones Híbridas con Android, iOS y Progressive Web Apps (PWA)",

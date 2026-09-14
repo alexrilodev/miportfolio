@@ -604,6 +604,22 @@ section > h2 {
   color: #000;
 }
 
+.badge-status {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  padding: 4px 12px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: var(--color-accent);
+  background: rgba(52, 92, 114, 0.1);
+  border: 1px solid rgba(52, 92, 114, 0.3);
+  border-radius: 20px;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 #modal-links {
   display: flex;
   flex-wrap: wrap;

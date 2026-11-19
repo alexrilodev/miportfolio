@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stack preview</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<section id="stack-tecnologico" aria-labelledby="stack-title">
+        <h2 id="stack-title" data-translate="stack_title">💻 Conocimientos Técnicos</h2>
+        <div class="stack-container">
+            <h3 class="stack-group" data-translate="stack_group_hrtech">HR Tech / Digital</h3>
+            <div class="stack-item">
+                <h3>Microsoft 365</h3>
+                <img src="img/microsoft365.svg" alt="Logo de Microsoft 365" loading="lazy" />
+            </div>
+            <div class="stack-item">
+                <h3>SharePoint</h3>
+                <img src="img/sharepoint.svg" alt="Logo de SharePoint" loading="lazy" />
+            </div>
+            <div class="stack-item">
+                <h3>Power Platform</h3>
+                <img src="img/powerplatform.svg" alt="Logo de Microsoft Power Platform" loading="lazy" />
+            </div>
+            <div class="stack-item">
+                <h3>Azure</h3>
+                <img src="https://cdn.jsdelivr.net/gh/pheralb/svgl@main/static/library/azure.svg" alt="Logo de Microsoft Azure" loading="lazy" />
+            </div>
+            <div class="stack-item">
+                <h3>Copilot</h3>
+                <img src="img/copilot.svg" alt="Logo de Microsoft Copilot" loading="lazy" />
+            </div>
+            <div class="stack-item">
+                <h3>Moodle</h3>
+                <img src="https://cdn.simpleicons.org/moodle" alt="Logo de Moodle" loading="lazy" />
+            </div>
+            <div class="stack-item">
+                <h3>Google</h3>
+                <img src="https://cdn.simpleicons.org/google" alt="Logo de Google" loading="lazy" />
+            </div>
+            <div class="stack-item">
+                <h3>LinkedIn Recruiter</h3>
+                <img src="https://cdn.jsdelivr.net/gh/gilbarbara/logos@main/logos/linkedin-icon.svg" alt="Logo de LinkedIn Recruiter" loading="lazy" />
+            </div>
+
+            <h3 class="stack-group" data-translate="stack_group_dev">Desarrollo</h3>
+            <div class="stack-item">
+                <h3>HTML</h3>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="Logo de HTML5" loading="lazy" />
+            </div>
+            <div class="stack-item">
+                <h3>CSS</h3>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="Logo de CSS3" loading="lazy" />
+            </div>
+            <div class="stack-item">
+                <h3>JavaScript</h3>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="Logo de JavaScript" loading="lazy" />
+            </div>
+            <div class="stack-item">
+                <h3>TypeScript</h3>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt="Logo de TypeScript" loading="lazy" />
+            </div>
+            <div class="stack-item">
+                <h3>Java</h3>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="Logo de Java" loading="lazy" />
+            </div>
+            <div class="stack-item">
+                <h3>C#</h3>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" alt="Logo de C#" loading="lazy" />
+            </div>
+            <div class="stack-item">
+                <h3>PHP</h3>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" alt="Logo de PHP" loading="lazy" />
+            </div>
+            <div class="stack-item">
+                <h3>SQL</h3>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="Logo de SQL" loading="lazy" />
+            </div>
+            <div class="stack-item">
+                <h3>Node.js</h3>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" alt="Logo de Node.js" loading="lazy" />
+            </div>
+            <div class="stack-item">
+                <h3>Angular</h3>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg" alt="Logo de Angular" loading="lazy" />
+            </div>
+            <div class="stack-item">
+                <h3>Ionic</h3>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ionic/ionic-original.svg" alt="Logo de Ionic" loading="lazy" />
+            </div>
+            <div class="stack-item">
+                <h3>VS Code</h3>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" alt="Logo de Visual Studio Code" loading="lazy" />
+            </div>
+            <div class="stack-item">
+                <h3>WordPress</h3>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/wordpress/wordpress-plain.svg" alt="Logo de WordPress" loading="lazy" />
+            </div>
+        </div>
+    </section>
+
+<div id="probe" style="font:16px monospace;background:#ff0;color:#000;padding:8px;white-space:pre-wrap"></div>
+<script>
+function run(){
+  try{
+    var b=document.body, sec=document.getElementById('stack-tecnologico'),
+        grid=sec.querySelector('.stack-container'),
+        items=[].slice.call(grid.querySelectorAll('.stack-item')),
+        hdrs=[].slice.call(grid.querySelectorAll('.stack-group'));
+    var r=grid.getBoundingClientRect();
+    var lines=[];
+    lines.push('viewport_w=' + window.innerWidth + ' scrollW=' + document.documentElement.scrollWidth + ' bodyScrollW=' + b.scrollWidth);
+    lines.push('sec_rect=' + JSON.stringify(sec.getBoundingClientRect()));
+    lines.push('grid_rect w=' + Math.round(r.width) + ' left=' + Math.round(r.left));
+    lines.push('computed_cols=' + getComputedStyle(grid).gridTemplateColumns);
+    lines.push('item_count=' + items.length + ' hdr_count=' + hdrs.length);
+    items.slice(0,10).forEach(function(el,i){
+      var q=el.getBoundingClientRect(), img=el.querySelector('img').getBoundingClientRect(), h3=el.querySelector('h3').getBoundingClientRect();
+      lines.push('item'+i+' w='+Math.round(q.width)+' left='+Math.round(q.left)+' | img '+Math.round(img.width)+'x'+Math.round(img.height)+' | h3top='+Math.round(h3.top));
+    });
+    document.getElementById('probe').textContent=lines.join('\n');
+    document.title='PROBE_DONE';
+  }catch(e){document.getElementById('probe').textContent='ERR '+e.message;}
+}
+if(document.readyState!=='loading') run(); else document.addEventListener('DOMContentLoaded', run);
+</script>
+</body>
+</html>

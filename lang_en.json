@@ -10,15 +10,17 @@
   "nav_soft_skills": "Soft Skills",
   "nav_contact": "Contact",
 
-  "hero_title_1": "Professional with experience in <span class='resaltar'>Application Development</span> and <span class='resaltar'>Cloud services</span>, with a previous background in <span class='resaltar'>Human Resources</span> and <span class='resaltar'>Psychology</span>. My professional background combines:",
-  "experience_1": "<span class='resaltar'>HR:</span> Solid experience in Selection, Training, and Talent Management of IT profiles.",
-  "experience_2": "<span class='resaltar'>Full Stack Development:</span> Training and experience in Web Application Development, highlighting my skills in HTML, CSS, JavaScript, TypeScript, Java, C#, PHP, SQL, Node.js, Angular, Ionic, VS Code, WordPress.",
-  "experience_3": "<span class='resaltar'>IT Technical Consulting:</span> Experience in consulting, process digitization, and M365 / Cloud solutions.",
-  "hero_title_2": "This comprehensive approach allows me to bring a <span class='resaltar'>strategic vision</span> to every project I undertake.",
+  "hero_title_1": "HR professional with 7 years of experience in talent management and training, and technical consultant in <span class='resaltar'>digital transformation</span>. My professional background combines:",
+  "experience_1": "<span class='resaltar'>HR & Talent Acquisition:</span> Talent selection (including IT profiles), training, career guidance, and end-to-end labor administration.",
+  "experience_3": "<span class='resaltar'>Technical Consulting & Digital Transformation:</span> Process digitization, Microsoft 365 environments (SharePoint, Power Platform), Cloud services (Azure/M365), CMS, and e-learning platforms.",
+  "experience_2": "<span class='resaltar'>Software Development:</span> Custom web applications with HTML, CSS, JavaScript, TypeScript, PHP, SQL, Node.js, Angular, Ionic, Java, C#, WordPress.",
+  "hero_title_2": "This approach lets me work with the technical side and with people at the same time, so that digital solutions get adopted and actually work.",
   "download_cv_es": "CV - Spanish",
   "download_cv_en": "CV - English",
 
   "stack_title": "💻 Technical Skills",
+  "stack_group_hrtech": "HR Tech / Digital",
+  "stack_group_dev": "Development",
 
   "projects_title": "📊 Projects",
   "project_ghostsignals_description": "Geolocation application developed with <strong>Ionic and Angular</strong> that allows users to create and discover points of interest nearby on an interactive map <strong>(Leaflet + OpenStreetMap)</strong>. The app works both as a native application on <strong>Android</strong> and as a <strong>PWA</strong> in the browser, using <strong>Capacitor</strong> for the native layer, <strong>Firebase Authentication</strong> for login, <strong>Supabase with PostGIS</strong> for the backend and geospatial queries, as well as <strong>Firebase Hosting</strong> for web deployment.<br><br> Users can automatically create geolocated signals and add photos taken with their own device, enter the title and description of the signal, indicate the corresponding thematic tags, and publish. The push notification system alerts nearby users within a 5 km radius when signals are published in their area.",
@@ -61,12 +63,12 @@
 
 
   "experience_title": "💼 Experience",
-  "experience_web_developer": "Application & Cloud Developer",
-  "experience_web_developer_description": "<span class='exp-meta'><strong>2026 - Present</strong> | Fundación Esplai</span> <strong>Full Stack</strong> programming of custom applications, <strong>CMS</strong> configuration, <strong>Microsoft 365</strong> workspace architecture, Cloud services <strong>(Azure/M365)</strong>, and <strong>technical consulting</strong> for the Third Sector.",
-  "experience_project_coordinator": "Training Project Coordinator IT",
-  "experience_project_coordinator_description": "<span class='exp-meta'><strong>2023 - 2026</strong> | Fundación Esplai</span> Management and coordination of <strong>training projects</strong> in digital literacy, basic ICT skills, and/or technical web programming. <strong>Career guidance, labor market outreach, and instructional collaboration in IT training initiatives</strong>.",
-  "experience_hr_technician": "HR Technician | Talent Acquisition Specialist",
-  "experience_hr_technician_description": "<span class='exp-meta'><strong>2019 - 2023</strong> | Synergie - Iman - Manpower</span> Personnel selection for different professional sectors and clients, with special emphasis on the <strong>IT sector</strong> and technical professional roles. Full labor administration, and <strong>talent management</strong>.",
+  "experience_coordinator_it": "IT Project Coordinator",
+  "experience_coordinator_it_description": "<span class='exp-meta'><strong>2024 - Present</strong> | Fundación Esplai</span> Coordination of <strong>training and technical consulting projects</strong> with trainers and Public Administration: planning, delivery, and funding justification. <strong>Process digitization</strong> (Kit Digital, Red.es), custom application development, <strong>Microsoft 365</strong> architecture, and CMS / e-learning platforms (WordPress, Moodle).",
+  "experience_training_technician": "Training Programs Technician",
+  "experience_training_technician_description": "<span class='exp-meta'><strong>2023 - 2024</strong> | Fundación Esplai</span> Teaching and tutoring in <strong>digital skills, ICT literacy, and web programming</strong> (groups of 15-20 participants). Career guidance and labor market outreach, plus management of <strong>Moodle, GALILEU, and GIA</strong> tools.",
+  "experience_hr_ta": "HR & Selection Technician | Talent Acquisition Specialist",
+  "experience_hr_ta_description": "<span class='exp-meta'><strong>2019 - 2023</strong> | Grupo IMAN - Manpower</span> 360º recruitment with special emphasis on <strong>IT profiles</strong>, job profiling with technical managers, competency assessment, and <strong>full labor administration</strong> (contracts, payroll, and Social Security).",
 
   "soft_skills_title": "🧠 Soft Skills",
   "soft_skills_assertiveness": "Assertiveness",
